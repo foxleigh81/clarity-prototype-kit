@@ -1,0 +1,14 @@
+language: node_js
+node_js: stable
+before_script:
+- npm install -g gulp
+script: gulp build
+deploy:
+  provider: heroku
+  skip_cleanup: false
+  api_key:
+    secure: uWD9qpqTZ3befr+VzOyw+UVhpRhd5a3uJglWiyQGbWeQbHxzjJs1+0PrL9jf+tm+RC7kJWM3NlsLFdNssibBfgtA+HqfAhiiD2F7dCctFOCNdYLA0GVh28CFZzrEFuM7VSpJ8fkBj6vEFpX5Yrzk4v8+ZpvSr5EQQfUhLzp4caRoge6m5Xohhb7WeMKrOjEN4Kk7BKvOpNQl9t6iEVgyJypp/jK6BQg6Y6X/gbKQRG3zcNrDl3Hs24oBDuJExVGU3MuwoTKHqMJlkjDowBvj9Ur0P4CP9vMyEqzxaxzZ3lGk8+YCZpZ53CpKOhm72V48AkQxgaywghwc3S8R0FcP4S6J/G1OPytKyiCsmM9wfg8dwwTKIg76vlVCqlISgwFmvOgawp+Sr0EYYWJlokJcgozkXR86fblIEenZKPQvaMhIKSd5j/ZV6uNwl81Aq/5MSZ50uO9uQpDNyNdcbxCZxk0hT4eQjbKFAPPW+sz2AgVxzkJGuPux0oqR+EcOCyhgCPwd3n0XtiwWpqkZ9YNVLbXYD1x7tjc0oTwiZYrIGc3eVUK8j5RPjZ/pFh/NNkyqsjdbvs9orq6bFcboVJ3mZ0cFDTY7UPpG4zL7DZO5/3rWpx9z6aapCXics+FB8F/ADqlcBV+Q8t+eI3B+qy8ozYNGVsFVtQxJW4Oc7plllrU=
+  app:
+    master: evening-beyond-21116
+  on:
+    repo: ministryofjustice/oocp-cait

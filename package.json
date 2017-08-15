@@ -1,0 +1,89 @@
+{
+  "name": "clarity-prototype-toolkit",
+  "version": "0.2.5-0",
+  "engines": {
+    "node": "4.4.5",
+    "npm": "2.15.5"
+  },
+  "description": "A prototyping kit for the clarity toolkit",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "gulp watch",
+    "test": "standard",
+    "postinstall": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ministryofjustice/clarity-prototype-toolkit.git"
+  },
+  "contributors": [
+    {
+      "name": "Alex Foxleigh",
+      "url": "http://www.alexfoxleigh.com"
+    },
+    {
+      "name": "Irune Itolz"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ministryofjustice/clarity-prototype-toolkit/issues"
+  },
+  "homepage": "https://github.com/ministryofjustice/clarity-prototype-toolkit#readme",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "body-parser": "^1.17.2",
+    "chalk": "^1.1.3",
+    "compression": "^1.7.0",
+    "connect-browser-sync": "^2.1.0",
+    "del": "^3.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-css-purge": "^1.0.27",
+    "gulp-express": "^0.3.5",
+    "ie-love": "0.0.3",
+    "jquery": "^1.12.4",
+    "morgan": "^1.8.2",
+    "node-notifier": "^5.1.2",
+    "nunjucks": "^3.0.1",
+    "phantomjs": "^2.1.7",
+    "run-sequence": "^1.2.2",
+    "serve-favicon": "^2.4.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "chalk": "^1.1.1",
+    "ctgen": "latest",
+    "del": "latest",
+    "glob-fs": "^0.1.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "latest",
+    "gulp-csso": "latest",
+    "gulp-eslint": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-standard": "^9.0.0",
+    "gulp-strip-debug": "^1.0.2",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "ie8-js": "^0.1.2",
+    "inquirer": "^3.0.6",
+    "jeet": "^7.1.0",
+    "node-notifier": "^5.1.2",
+    "rupture": "^0.6.2",
+    "standard": "^9.0.2",
+    "yargs": "^7.0.2"
+  }
+}
