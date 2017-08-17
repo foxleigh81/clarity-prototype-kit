@@ -80,6 +80,7 @@ var errors = 0,
     'ios 6',
     'android 4'
 ],
+
 onError = function (err) {
   'use strict';
   console.log(chalk.red('✘ Build failed!'))
@@ -178,17 +179,17 @@ gulp.task('vendors', function () {
     'node_modules/ie8-js/js/build/ie8-js-html5shiv.js',
     'src/vendors/**/*'
   ])
-  .pipe(gulp.dest('assets/vendors'))
+  .pipe(gulp.dest('src/static/vendors'))
 })
 
 // Move static content to assets folder
 gulp.task('static', function (done) {
   // Move fonts
   gulp.src('src/globals/fonts/**/*')
-    .pipe(gulp.dest('assets/fonts'))
+    .pipe(gulp.dest('src/static/fonts'))
   // Move Favicons
   gulp.src('src/globals/images/icons/*')
-    .pipe(gulp.dest('assets/icons'))
+    .pipe(gulp.dest('src/static/icons'))
   done()
 })
 

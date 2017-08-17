@@ -1,31 +1,30 @@
 {
-  "name": "E-Claims",
+  "name": "clarity-prototype-kit",
   "version": "0.0.1",
   "engines": {
     "node": "0.12.7",
     "npm": "2.11.3"
   },
-  "description": "The e-claims website",
+  "description": "The prototype toolkit for clarity",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "karma start karma.conf.js --single-run",
+    "test": "",
     "postinstall": "gulp build --prod"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BBQDigital/e-claims.git"
+    "url": "git+https://github.com/ministryofjustice/clarity-prototype-kit.git"
   },
   "keywords": [],
   "author": "Alex Ward",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BBQDigital/e-claims/issues"
+    "url": "https://github.com/ministryofjustice/clarity-prototype-kit/issues"
   },
   "homepage": "",
   "devDependencies": {
     "browser-sync": "^2.11.0",
-    "casperjs": "^1.1.0-beta5",
     "chalk": "^1.1.1",
     "del": "latest",
     "gulp": "^3.9.0",
@@ -52,18 +51,12 @@
     "gulp-util": "^3.0.7",
     "gutil": "^1.6.4",
     "imagemin-pngquant": "latest",
-    "jasmine-core": "^2.4.1",
     "jeet": "^6.1.2",
     "jsoneditor": "^5.1.5",
-    "karma": "^0.13.21",
-    "karma-jasmine": "^0.3.7",
-    "karma-phantomjs-launcher": "^1.0.0",
-    "karma-spec-reporter": "0.0.24",
     "node-notifier": "^4.5.0",
     "phantomjs-prebuilt": "^2.1.4",
     "run-sequence": "^1.1.5",
     "rupture": "^0.6.1",
-    "spooky": "^0.2.5",
     "webpack-dev-server": "^1.14.1",
     "webpack-stream": "^3.1.0",
     "yargs": "^4.2.0"
@@ -74,10 +67,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-standard": "^10.1.0",
     "jquery": "^2.2.0",
-    "lodash": "^4.5.0",
     "nunjucks": "^3.0.1",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
     "webpack": "^1.12.14"
   }
 }
