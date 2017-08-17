@@ -1,8 +1,7 @@
 {
   "config" : {
     "host" : "localhost:5000",
-    "siteName" : "E-Claims",
-    "phaseTag" : "<span class=\"phase__message phase__alpha\">This is a new service – <a href=\"#\">help us improve it.</a></span>"
+    "siteName" : "Clarity rebuild prototype"
   },
   "globalHeader" : {
     "componentClass" : "c-global-header",
@@ -25,39 +24,31 @@
         "state" : "all"
       },
       {
-        "label" : "Login",
-        "url" : "#",
+        "label" : "News",
+        "url" : "/news",
         "state" : "noAuth"
       },
       {
-        "label" : "Search",
-        "url" : "#",
-        "state" : "all"
-      },
-      {
-        "label" : "Register",
-        "url" : "#",
+        "label" : "Events",
+        "url" : "/events",
         "state" : "noAuth"
       },
       {
-        "label" : "Manage Users",
-        "url" : "#",
+        "label" : "Guidance &amp; forms",
+        "url" : "/guidance",
+        "state" : "noAuth"
+      },
+      {
+        "label" : "About Us",
+        "url" : "/about",
         "state" : "onlyAuth"
       },
       {
-        "label" : "My Account",
-        "url" : "#",
+        "label" : "Blog",
+        "url" : "blog",
         "state" : "onlyAuth"
       }
     ]
-  },
-  "globalLoggedIn" : {
-    "componentClass" : "c-global-logged-in",
-    "userFirstName" : "FirstName",
-    "userLastName" : "Surname",
-    "userCompany" : "Company Name",
-    "logoutLinkText" : "Sign out",
-    "logoutLinkURL" : "index.html"
   },
   "globalFooter" : {
     "componentClass" : "c-global-footer",

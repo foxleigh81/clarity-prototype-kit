@@ -1,12 +1,10 @@
 <nav class="c-main-nav-bar">
   <div class="u-wrapper">
     <ul>
-      <li class="current"><a href="">Home</a></li>
-      <li><a href="">News</a></li>
-      <li><a href="">Events</a></li>
-      <li><a href="">Guidance &amp; forms</a></li>
-      <li><a href="">About Us</a></li>
-      <li><a href="">Blog</a></li>
+      {# Loop through navigation and show the links #}
+      {% for item in globalNavigation.item %}
+        <li><a href="{{item.url}}">{{item.label}}</a></li>
+      {% endfor %}
     </ul>
   </div>
 </nav>
