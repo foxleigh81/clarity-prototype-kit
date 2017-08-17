@@ -2,13 +2,14 @@ language: node_js
 node_js: stable
 before_script:
 - npm install -g gulp
-script: gulp build
+script: gulp build --prod
 deploy:
   provider: heroku
-  skip_cleanup: false
+  skip_cleanup: true
   api_key:
-    secure: uWD9qpqTZ3befr+VzOyw+UVhpRhd5a3uJglWiyQGbWeQbHxzjJs1+0PrL9jf+tm+RC7kJWM3NlsLFdNssibBfgtA+HqfAhiiD2F7dCctFOCNdYLA0GVh28CFZzrEFuM7VSpJ8fkBj6vEFpX5Yrzk4v8+ZpvSr5EQQfUhLzp4caRoge6m5Xohhb7WeMKrOjEN4Kk7BKvOpNQl9t6iEVgyJypp/jK6BQg6Y6X/gbKQRG3zcNrDl3Hs24oBDuJExVGU3MuwoTKHqMJlkjDowBvj9Ur0P4CP9vMyEqzxaxzZ3lGk8+YCZpZ53CpKOhm72V48AkQxgaywghwc3S8R0FcP4S6J/G1OPytKyiCsmM9wfg8dwwTKIg76vlVCqlISgwFmvOgawp+Sr0EYYWJlokJcgozkXR86fblIEenZKPQvaMhIKSd5j/ZV6uNwl81Aq/5MSZ50uO9uQpDNyNdcbxCZxk0hT4eQjbKFAPPW+sz2AgVxzkJGuPux0oqR+EcOCyhgCPwd3n0XtiwWpqkZ9YNVLbXYD1x7tjc0oTwiZYrIGc3eVUK8j5RPjZ/pFh/NNkyqsjdbvs9orq6bFcboVJ3mZ0cFDTY7UPpG4zL7DZO5/3rWpx9z6aapCXics+FB8F/ADqlcBV+Q8t+eI3B+qy8ozYNGVsFVtQxJW4Oc7plllrU=
+    secure: NReYQdiyhfXzJ3DgfWoebssRbqfJuMtjIH6jDSURTGt26a6G6cUxB7IIEAttAiwvfBgSFNzdS6LT9bTK2TWMPrTeHJVvRWTTsq4NLKienlNz7bX1j7nEFRpL7QLM6WyJUo3ssjFa2awqyyURvjbjk7Ba5xfDabFIVxMrSa2wIuOzJ4nogYXfdznetqWMuoxpAnBUBryGDL9PVe1fX/05v4qCA10WKwcnGlWoRgjHIDHWUo4/bcL+lzffbpePw2QkheMPIiEdkcZIHaDHBR5/8o1rekBy0uCY8AP8cjcJLD6doe8dO1ImnUaX/m1ik9vd4YlEI6e92quZaWteu89wGUO0mVjRVzGDX6JSi4ayoIX7GuVKe3/HA9CycukgTm4V5cZTuwOjMpv3xH5VuCTaybnTGRv7QcnoqSk2VecwUjhVpAssxDRIo+Dlczho2RCRmWY1a4eVTJynKC6P66Am+9sizhaA7LvrteOm6qS+ZSAEZGdBwSKzmn+ptRe16Mth40FzMkMKMnHZPiEqGFPgs/vme3bdT4ElkkgEjLEKPbKAUi7A2FgJmmSkkilKcx3OrzuVNQArdnH0m63PW2izXPH1wSwXgaZ5JVqztOrKz7qfxoOMdcdO6B5ufmYSYEHy/a4kaSCMsxs4AbaNTr51SZXcqeEfpLZSDZjU8uOOw1c=
   app:
-    master: evening-beyond-21116
+    master: e-claims
+    stable: e-claims-stable
   on:
-    repo: ministryofjustice/oocp-cait
+    repo: BBQDigital/e-claims

@@ -1,0 +1,93 @@
+{
+  "config" : {
+    "host" : "localhost:5000",
+    "siteName" : "E-Claims",
+    "phaseTag" : "<span class=\"phase__message phase__alpha\">This is a new service – <a href=\"#\">help us improve it.</a></span>"
+  },
+  "globalHeader" : {
+    "componentClass" : "c-global-header",
+    "propositionTitle" : "Apply for European Structural and Investment Funding",
+    "logo" :
+      {
+        "imagePath" : "static/images/gov.uk_logotype_crown.png",
+        "imageDesc" : "gov.uk crown logo",
+        "text" : "gov.uk",
+        "url" : "/"
+      }
+  },
+  "globalNavigation" : {
+    "componentClass" : "c-global-nav",
+    "menuText" : "Menu",
+    "item" : [
+      {
+        "label" : "Home",
+        "url" : "/",
+        "state" : "all"
+      },
+      {
+        "label" : "Login",
+        "url" : "#",
+        "state" : "noAuth"
+      },
+      {
+        "label" : "Search",
+        "url" : "#",
+        "state" : "all"
+      },
+      {
+        "label" : "Register",
+        "url" : "#",
+        "state" : "noAuth"
+      },
+      {
+        "label" : "Manage Users",
+        "url" : "#",
+        "state" : "onlyAuth"
+      },
+      {
+        "label" : "My Account",
+        "url" : "#",
+        "state" : "onlyAuth"
+      }
+    ]
+  },
+  "globalLoggedIn" : {
+    "componentClass" : "c-global-logged-in",
+    "userFirstName" : "FirstName",
+    "userLastName" : "Surname",
+    "userCompany" : "Company Name",
+    "logoutLinkText" : "Sign out",
+    "logoutLinkURL" : "index.html"
+  },
+  "globalFooter" : {
+    "componentClass" : "c-global-footer",
+    "navigation" : [
+      {
+        "label" : "Terms and Conditions",
+        "url" : "#"
+      },
+      {
+        "label" : "Privacy Policy",
+        "url" : "#"
+      },
+      {
+        "label" : "Feedback",
+        "url" : "#"
+      },
+      {
+        "label" : "Cymraeg",
+        "url" : "#"
+      },
+      {
+        "label" : "Built by DCLG and DWP",
+        "url" : "#"
+      }
+    ],
+    "copyright" : {
+      "imagePath" : "static/images/footer-crest.png",
+      "imageDesc" : "The crown logo",
+      "text" : "&copy; Crown copyright",
+      "link" : "#"
+    }
+  }
+}
