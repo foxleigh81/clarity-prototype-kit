@@ -54,7 +54,6 @@
     "jeet": "^6.1.2",
     "jsoneditor": "^5.1.5",
     "node-notifier": "^4.5.0",
-    "phantomjs-prebuilt": "^2.1.4",
     "run-sequence": "^1.1.5",
     "rupture": "^0.6.1",
     "webpack-dev-server": "^1.14.1",
@@ -62,12 +61,16 @@
     "yargs": "^4.2.0"
   },
   "dependencies": {
+    "assert": "^1.4.1",
+    "cucumber": "^3.0.0",
+    "dotenv": "^4.0.0",
     "express": "^4.13.4",
     "gulp-nunjucks-html": "^2.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-standard": "^10.1.0",
     "jquery": "^2.2.0",
     "nunjucks": "^3.0.1",
+    "phantomjs": "^2.1.7",
     "webpack": "^1.12.14"
   }
 }
