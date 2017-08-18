@@ -186,10 +186,10 @@ gulp.task('vendors', function () {
 gulp.task('static', function (done) {
   // Move fonts
   gulp.src('src/globals/fonts/**/*')
-    .pipe(gulp.dest('src/static/fonts'))
+    .pipe(gulp.dest('dist/static/fonts'))
   // Move Favicons
   gulp.src('src/globals/images/icons/*')
-    .pipe(gulp.dest('src/static/icons'))
+    .pipe(gulp.dest('dist/static/icons'))
   done()
 })
 
