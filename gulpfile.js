@@ -252,18 +252,18 @@ gulp.task('robots', function() {
 
 gulp.task('processHTML', function() {
   'use strict';
-  return gulp.src('./src/pages/*.njk')
+  return gulp.src('src/pages/*.njk')
     .pipe(plumber(
       { errorHandler: onError }
     ))
     .pipe(data(function(file) {
-      return JSON.parse(fs.readFileSync('./src/model/' + path.basename(file.path, '.njk') + '.json'));
+      return JSON.parse(fs.readFileSync('src/model/' + path.basename(file.path, '.njk') + '.json'));
     }))
     .pipe(data(function() {
-      return JSON.parse(fs.readFileSync('./src/model/globals.json'));
+      return JSON.parse(fs.readFileSync('src/model/globals.json'));
     }))
     .pipe(nunjucks({
-      searchPaths: ['./src/pages', './src/components', './src/templates']
+      searchPaths: ['src/pages', 'src/components', 'src/templates']
     }))
     .pipe(extReplace('.html'))
     .pipe(gulp.dest('dist'))
@@ -271,7 +271,7 @@ gulp.task('processHTML', function() {
 });
 
 var prodBuild = ['clean', 'styles','vendors', 'static','scripts','images','processHTML','robots', 'notify'],
-    devBuild = ['styles','vendors', 'static','scripts','images','processHTML','notify'],
+    devBuild = ['clean', 'styles','vendors', 'static','scripts','images','processHTML','notify'],
     buildTasks = argv.prod ? prodBuild : devBuild;
 
 // Perform Basic Build (note, don't call directly, use build:dev or build)

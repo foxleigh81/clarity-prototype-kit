@@ -1,7 +1,13 @@
 <article class="c-article-item js-article-item">
-  <img src=http://www.punchnels.com/wp-content/uploads/2015/09/Resistance-is-futile-Picard-Borg.jpg" alt="Image Alt tag">
-  <h1><a href="http://www.link.com">Article title</a></h1>
-    <% include ../components/c-article-excerpt/view %>
-  <span class="c-article-item__dateline">30th January 3005</span>
-  <span class="c-article-item__byline">Aljernon Frood</span>
+  <img src="{{ context.imgSrc }}" alt="{{ context.imgAlt }}">
+  <h1><a href="{{ context.url }}">{{ context.title }}</a></h1>
+  {% if (context.excerpt !== "") %}
+    {% include '../c-article-exceprt/view.njk' %}
+  {% endif %}
+  {% if (context.dateline !== "") %}
+    <span class="c-article-item__dateline">{{ context.dateline }}</span>
+  {% endif %}
+  {% if (context.byline !== "") %}
+    <span class="c-article-item__byline">{{ context.byline }}</span>
+  {% endif %}
 </article>

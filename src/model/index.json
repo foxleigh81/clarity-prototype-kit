@@ -1,70 +1,25 @@
 {
   "meta" : {
-    "pageTitle" : "Application overview",
+    "pageTitle" : "Ministry of Justice HQ",
     "description" : "to be added",
     "canonical" : "index.html"
   },
-  "contentIntro" : {
-    "componentClass" : "c-headed-text",
-    "title" : "E-Claims Login page",
-    "subtitle" : "",
-    "bodyCopy" : " <a href=\"\" target=\"_blank\" rel=\"external\">Register for an E-CLAIMS account <span class=\"vishide\">(link opens in a new window)</span></a> to manage your ESIF projects.",
-    "ctaType" : "",
-    "ctaText" : "",
-    "ctaURL" : ""
+  "article1" : {
+    "title" : "Setting performance objectives",
+    "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2016/12/performance-management-650x433.jpg",
+    "imgAlt" : "Two people talking",
+    "url" : "test1.html",
+    "dateline" : "18 May 2017",
+    "byline" : "",
+    "excerpt" : ""
   },
-  "loginForm" : {
-    "componentClass" : "c-login-form",
-    "title": "Please sign in:",
-    "formBuilder" : {
-      "id" : "loginForm",
-      "action" : "dashboard.html",
-      "method" : "get",
-      "classes" : "",
-      "fieldset" : [
-        {
-          "legend" : "Please enter your login details",
-          "visibleLegend" : false,
-          "fields" : [
-            {
-              "type" : "text",
-              "fieldid" : "login-username",
-              "name" : "login-username",
-              "label" : "User ID",
-              "enabled" : true,
-              "required" : true,
-              "validation" : "default",
-              "initialVal" : "",
-              "placeholderText" : "Enter your username",
-              "options" : [],
-              "error" : ""
-            },
-            {
-              "type" : "password",
-              "fieldid" : "login-password",
-              "name" : "login-password",
-              "label" : "Password",
-              "enabled" : true,
-              "required" : true,
-              "validation" : "default",
-              "initialVal" : "",
-              "placeholderText" : "",
-              "options" : [],
-              "error" : ""
-            }
-          ],
-          "buttons" : [
-            {
-              "type" : "submit",
-              "enabled" : true,
-              "name" : "button",
-              "id" : "login-button",
-              "classes" : "",
-              "text" : "Login"
-            }
-          ]
-        }
-      ]
-    }
+  "article2" : {
+    "title" : "Making MoJ smarter with Advanced Analytics",
+    "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2016/03/20170522-Vicky-Hughes-for-blog-AA-650x433.jpg",
+    "imgAlt" : "Smiling woman",
+    "url" : "test2.html",
+    "dateline" : "25 May 2017",
+    "byline" : "",
+    "excerpt" : ""
   }
 }

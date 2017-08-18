@@ -7,8 +7,9 @@ deploy:
   provider: heroku
   skip_cleanup: true
   api_key:
-    secure: notaddedyet
+    secure: 0nO3CVesIJtPVr9sK/7tJYViiYo1Eg+zMXSJkvilg6N38jYTm84JvMmpfNxGW4LgFd74z6bxgo4xochqFwS+FZu/UDt94Aw07rOc34970cc8JGyvmiUGwZ0H1QXDKN5k6i7IMh7X7fYw1x0OK+bQJwIy7rA2BX01VOw4+BJpxoL2bTj1u4LZmr/U47mLctOYZpyqYvedaB0Be2qc4kdhncmmxz4D7Ly7Pq2tPfYepg5i/1nLm4p3iafydYLF0ORrbWscsnkHWnz5+D9U/HdLi1VGl/pvtWp07Cbh+RKxm3stSl6FUwwW3DzCnD+SZyVjppeVZwLQP9JfwLsgmHi2LJDnmFIZ+DdJwjYX2Cwr8neFynxMGiZV8m63h+gNYfIDw+YefLDDBG8K9dHLhu9usLYk0RNo1TD5Tr9FWEYce5rBjxgr5RAuk805EhbPFrGTsBXmhiX0Q7gH8eovgZLkxhbvAuetuS9/UkS91oT/Yp0kES84uxy2/UA5gJJBEDQTMYGaJt4eV6EqavSu68eDeuEelSJEIqaAWORWi9B/x6w4YkfIYR6bvaMdbJMNUJ/mSLwR+SNUZGsQh0s2D6t76jL8w/HzfnO7AQUjmKQnrhZjFH/zjf7l32tKUqKcv5wnODkUHG8AQGVhALLcCe4SW2BAt8AzCnOApciustPwQSk=
   app:
     master: moji-prototype
+    dev: moji-prototype-dev
   on:
     repo: ministryofjustice/clarity-prototype-kit

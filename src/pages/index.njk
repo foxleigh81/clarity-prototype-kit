@@ -1,10 +1,15 @@
 {% extends "../templates/layout.njk" %}
 {% block content %}
-    {# Load intro text #}
-    {# set context = contentIntro 3}
-    {# include "components/c-headed-text.nunjucks" #}
-    {# Load login form #}
-    {# set context = loginForm #}
-    {# include "components/c-login-form.nunjucks" #}
-    <p>Stuff</p>
+    <div id="maincontent" class="u-wrapper l-main t-home">
+        <h1 class="o-title o-title--page">{{ meta.pageTitle }}</h1>
+        <!-- c-home-page-primary starts here -->
+        <section class="c-home-page-primary l-primary" role="main">
+            {% include '../components/c-news-widget/view.njk' %}
+        </section>
+        <!-- c-home-page-primary ends here -->
+        <!-- c-home-page-secondary starts here -->
+        <section class="c-home-page-secondary l-secondary" role="complementary">
+        </section>
+        <!-- c-home-page-secondary ends here -->
+  </div>
 {% endblock %}
