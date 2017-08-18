@@ -23,7 +23,13 @@
     "url": "https://github.com/ministryofjustice/clarity-prototype-kit/issues"
   },
   "homepage": "",
-  "devDependencies": {
+  "dependencies": {
+    "express": "^4.13.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-standard": "^10.1.0",
+    "jquery": "^3.2.1",
+    "nunjucks": "^3.0.1",
+    "webpack": "^1.12.14",
     "browser-sync": "^2.11.0",
     "chalk": "2.1.0",
     "del": "latest",
@@ -58,13 +64,5 @@
     "webpack-dev-server": "^1.14.1",
     "webpack-stream": "^3.1.0",
     "yargs": "^4.2.0"
-  },
-  "dependencies": {
-    "express": "^4.13.4",
-    "gulp-rename": "^1.2.2",
-    "gulp-standard": "^10.1.0",
-    "jquery": "^3.2.1",
-    "nunjucks": "^3.0.1",
-    "webpack": "^1.12.14"
   }
 }
