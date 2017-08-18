@@ -8,9 +8,9 @@
   "description": "The prototype toolkit for clarity",
   "main": "server.js",
   "scripts": {
-    "build": "gulp build --prod",
     "start": "node server.js",
-    "test": ""
+    "test": "",
+    "postinstall": "gulp build --prod"
   },
   "repository": {
     "type": "git",
