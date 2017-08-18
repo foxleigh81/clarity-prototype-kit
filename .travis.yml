@@ -5,14 +5,8 @@ before_script:
 script: gulp build --prod
 deploy:
   provider: heroku
-  buildpack: nodejs
-  skip_cleanup: true
   api_key:
-    secure: bzkrzay+WipWWECexZN1b0nmfzbeAosta3NHpnfLwT/0RRYCuywSMruqQchaPAgX4hKXK4rGeh1L+nyyNTnpX2NRLDtm/LbNDVIJ1rG36Cb1hpYp+AR7TCZ9qJkBMHwczU4TPCKrcWg18RumP+mVFpOwcvM3e7csmnCzm02Qc9NVFNT/2LrmtEf0DgXRndchj4jzLv20vnFMV9+67dD3EIVhYwyn2h16/csvxoTwqORpItkSvFiASvfxxmBvTcUYkuXBWPezWRVhhYvT2I69zwsQCy2alaT00YZMmwrYL6oikXIdhiF15v2z+WOmZZ2PUMXNzQnvfNWExw8pBNnBJqHYO1RSqU4DuA30qaSRVvMWfbyi/D/Bxptq+Ejg7/+dk6SYne8lLVBFMV7XJNh/kVFIz6uShKvab3I7/SvLB7SsoZVwZVB/M079IPJJdzh4Nn+piqsRxUWoOxjIJek/FQTwfDl9yBOYhiGyAboZq6hMg2T1JUJQnUGx7cNOvpT4CR63Vggm1ymF4OsLFq+NCFGhMgSoUfwlGNfQjaLgOw9yNqBt/DjR6x8i+EITLHnJ4ywRqvzfSrMPWicYtLiA3Tvl9QvOQXIYJ1I3OlDr8sK4wnqUQYEUDHdB7PAi/2visuQ1TXVvcwkSGNE8F4ZoZivHc7Lw+aGv1HAiflFY74k=
-  app:
-    master: moji-prototype
-    dev: moji-prototype-dev
+    secure: Ju9Jfrk7bvQwcwIjxsATWrSoBj1rnDbnrrQI9pRocYC41Jw+bA+IUqYIYsn2KfhyXFXUyCh309lwmX8IhJjDqThJmYpshEKg2FaiB0HhecVnYFy+hhyHqycabSk6+uPQpgwNxRW8vhCssUHn7g+G37n9h+yjEmuhFioXXxNXk76qXmz6lMXyqpNw/kRRiTtqYz9JlWqYW1GewCTQN2u2Wpiilf44r4xXIsxw56h5KQaJU+Zt5JHKdzZGLibvWO9MyYM/KVPUSe6TG54MUVd6AYKv9EbihIUgO0EJhkdokR+ayI7h6I5lCtlGVOLc4an7n+aRVW3BrJbX1xJMHKxIfgBd9wmtmvaKtbQE3eVjLeuGjolNRbXVf2xpz9UJhA60tyewRBLSPlnbqFtbq8wyn/b4O5goM1l2sDhf1nTI3G2oYZ5Cu8aMvV9hlUMLfJS9XdNYNi2nqLj4UW9at7oaxlqZkkSFnx7qrbV5mUB1yxpTuwxFQYUZYF8S/tDSuBjKwB8yx+9SjkTwh3y64EpNPePkbUibcweM1VqP2qcNxchWCqRuWXrFWYIy5OeE/GTKzy+OFw5dPFa+rK94V3v3XLCxQ58k7TuQYE2Y4/2A5iwjdXwWTaCHMBEPyEqqakFyGYUwIbS9WPwOf6yqEmPPb00zemxuCLaR6BK6gydbDAw=
+  app: moji-prototype
   on:
     repo: ministryofjustice/clarity-prototype-kit
-  run:
-    - "node server.js"
