@@ -1,6 +1,6 @@
-<time class="c-calendar-icon" datetime="<?php echo $data;?>">
+<time class="c-calendar-icon" datetime="{{ context.time }}">
   <h2 class="u-visually-hidden">Date:</h2>
-  <span class="c-calendar-icon--dow">Tuesday</span>
-  <span class="c-calendar-icon--dom">34th</span>
-  <span class="c-calendar-icon--my">Octebuary, 1954</span>
+  <span class="c-calendar-icon--dow">{{ context.dow }}</span>
+  <span class="c-calendar-icon--dom"> {{ context.day }}</span>
+  <span class="c-calendar-icon--my">{{ context.month }}, {{ context.year }}</span>
 </time>

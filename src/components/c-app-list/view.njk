@@ -1,3 +1,7 @@
 <ul class="c-app-list">
-  <li><a href="http://link.com" title="Link title"><span class="u-icon u-icon--laa"></span><span class="c-app-list__app-name">Link title</span></a></li>
+   {% for link in appList %}
+  <li>
+      <a href="{{ link.url }}" title="{{ link.title }}"><span class='u-icon u-icon--{{ link.class }}'></span><span class="c-app-list__app-name">{{ link.title }}</span></a>
+  </li>
+  {% endfor %}
 </ul>

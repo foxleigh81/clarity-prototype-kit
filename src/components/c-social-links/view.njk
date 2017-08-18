@@ -1,7 +1,9 @@
 <section class="c-social-links">
     <h1 class="o-title o-title--section">Follow us</h1>
     <ul>
-        <li><a href="http://link.com"><span class="u-icon u-icon--laa"></span>Link title</a></li>
+        {% for link in socialLinks %}
+            <li><a href="{{ link.url }}"><span class="u-icon u-icon--{{ link.class }}"></span> {{ link.title }}</a></li>
+        {% endfor %}
     </ul>
 </section>
 

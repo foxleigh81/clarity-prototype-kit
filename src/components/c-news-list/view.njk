@@ -1,4 +1,7 @@
 <div class="c-news-list">
+  {% for article in newsArticles %}
+    {% set context = article %}
     {% include '../c-article-item/view.njk' %}
+  {% endfor %}
 </div>
 

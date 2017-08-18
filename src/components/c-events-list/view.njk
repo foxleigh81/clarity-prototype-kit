@@ -1,4 +1,7 @@
 <div class="c-events-list">
-   <% include ../components/c-events-item/view %>
+  {% for event in events %}
+    {% set context = event %}
+    {% include '../c-events-item/view.njk' %}
+  {% endfor %}
 </div>
 

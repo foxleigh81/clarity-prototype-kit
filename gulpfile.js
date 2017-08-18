@@ -179,7 +179,7 @@ gulp.task('vendors', function () {
     'node_modules/ie8-js/js/build/ie8-js-html5shiv.js',
     'src/vendors/**/*'
   ])
-  .pipe(gulp.dest('src/static/vendors'))
+  .pipe(gulp.dest('dist/static/vendors'))
 })
 
 // Move static content to assets folder
@@ -270,8 +270,8 @@ gulp.task('processHTML', function() {
     .pipe(reload({stream:true}))
 });
 
-var prodBuild = ['clean', 'styles','vendors', 'static','scripts','images','processHTML','robots', 'notify'],
-    devBuild = ['clean', 'styles','vendors', 'static','scripts','images','processHTML','notify'],
+var prodBuild = ['clean', 'styles','vendors','static','scripts','images','processHTML','robots', 'notify'],
+    devBuild = ['clean', 'styles','vendors','static','scripts','images','processHTML','notify'],
     buildTasks = argv.prod ? prodBuild : devBuild;
 
 // Perform Basic Build (note, don't call directly, use build:dev or build)

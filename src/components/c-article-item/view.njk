@@ -1,6 +1,8 @@
 <article class="c-article-item js-article-item">
-  <img src="{{ context.imgSrc }}" alt="{{ context.imgAlt }}">
-  <h1><a href="{{ context.url }}">{{ context.title }}</a></h1>
+  {% if (context.imgSrc !== "") %}
+    <img src="{{ context.imgSrc }}" alt="{{ context.imgAlt }}">
+  {% endif %}
+    <h1><a href="{{ context.url }}">{{ context.title }}</a></h1>
   {% if (context.excerpt !== "") %}
     {% include '../c-article-exceprt/view.njk' %}
   {% endif %}

@@ -1,6 +1,9 @@
 <section class="c-blog-feed">
     <h1 class="o-title o-title--section">Blog</h1>
     <div>
-        <% include ../components/c-article-item/view %>
+         {% for article in blogArticles %}
+            {% set context = article %}
+            {% include '../c-article-item/view.njk' %}
+        {% endfor %}
     </div>
 </section>

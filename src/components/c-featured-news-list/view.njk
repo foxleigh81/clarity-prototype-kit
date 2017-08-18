@@ -1,6 +1,6 @@
 <section class="c-featured-news-list">
-  {% set context = article1 %}
-  {% include '../c-article-item/view.njk' %}
-  {% set context = article2 %}
-  {% include '../c-article-item/view.njk' %}
+  {% for article in featuredNewsArticles %}
+    {% set context = article %}
+    {% include '../c-article-item/view.njk' %}
+  {% endfor %}
 </section>
