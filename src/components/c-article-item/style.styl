@@ -10,7 +10,7 @@
       position absolute
       top: $spacing*3
       left: $spacing*3
-      font-size $crust*1.5
+      font-size $crust*1.3
       width: 80%;
       text-shadow: 1px 1px 2px rgba($dark, .5)
       a {
@@ -51,6 +51,7 @@
         border-radius: 100%;
         vertical-align middle
         margin-right $spacing
+        opacity 1
       }
     }
     .c-categories {
@@ -98,6 +99,9 @@
   // Featured news
   .c-featured-news-list & {
     height: 300px;
+    +above('s') {
+      column(1/2, $cycle: 2);      
+    }
   }
 
   // Regular news

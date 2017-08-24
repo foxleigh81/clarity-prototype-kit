@@ -15,7 +15,7 @@
       {% include '../c-article-byline/view.njk' %}
     {% endif %}
     <div class="c-categories">
-      <a href="" class="theme-hmcts">#HMCTS</a>
+      <a href="" class="theme-{{context.agency | lower}}">#{{context.agency}}</a>
       <a href="">#news</a>
       <a href="">#workload</a>
     </div>
