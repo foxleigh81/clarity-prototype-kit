@@ -12,6 +12,7 @@
   padding: 0 0 $spacing*2 0;
   &__container {
     column(1/2);
+    float:right;
     position: relative;
   }
 
@@ -39,16 +40,15 @@
 
   // PARENT OVERRIDES
   .c-header-container & {
-    background-color: $primary;
-    padding: $spacing*2 0;
-    input {
-      border: 0;
-    }
+    //background-color: $primary;
+    padding: 0 $spacing*2;
+    margin-top -($spacing*2)
+    margin-bottom $spacing*2
     button {
       background-color: $dark;
     }
     .agency-opg & {
-     background-color: $opg_primary;
+     //background-color: $opg_primary;
     }
   }
 

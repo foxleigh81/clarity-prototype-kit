@@ -1,7 +1,11 @@
 <section class="c-news-widget">
-  <h1 class="o-title o-title--section">Featured News</h1>
+  <h1 class="o-title o-title--section" style="clear:both">Top in News</h1>
   {% include '../c-featured-news-list/view.njk' %}
-  <h1 class="o-title o-title--section">News</h1>
+  <a href="/newspage/" class="o-see-all-link" style="float:right">See all news</a>
+  <h1 class="o-title o-title--section" style="clear:both">Top in Community</h1>
   {% include '../c-news-list/view.njk' %}
-  <a href="/newspage/" class="o-see-all-link">See all news</a>
+  <a href="/newspage/" class="o-see-all-link" style="float:right">See all community</a>
+  <h1 class="o-title o-title--section" style="clear:both">Top in Guidance</h1>
+  {% include '../c-guidance-list/view.njk' %}
+  <a href="/newspage/" class="o-see-all-link" style="float:right">See all community</a>
 </section>

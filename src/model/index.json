@@ -6,21 +6,12 @@
   },
   "featuredNewsArticles" : [
     {
-      "title" : "Setting performance objectives",
-      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2016/12/performance-management-650x433.jpg",
+      "title" : "Winter is here: We must defend the wall",
+      "imgSrc" : "http://s2.r29static.com//bin/entry/5dd/720x405,80/1810599/image.jpg",
       "imgAlt" : "Two people talking",
       "url" : "test1.html",
       "dateline" : "18 May 2017",
-      "byline" : "",
-      "excerpt" : ""
-    },
-    {
-      "title" : "Making MoJ smarter with Advanced Analytics",
-      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2016/03/20170522-Vicky-Hughes-for-blog-AA-650x433.jpg",
-      "imgAlt" : "Smiling woman",
-      "url" : "test2.html",
-      "dateline" : "25 May 2017",
-      "byline" : "",
+      "byline" : "Jon Snow",
       "excerpt" : ""
     }
   ],
@@ -31,7 +22,7 @@
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
       "dateline" : "24 May 2017",
-      "byline" : "",
+      "byline" : "Alex Foxleigh",
       "excerpt" : ""
     },
     {
@@ -40,34 +31,7 @@
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
       "dateline" : "24 May 2017",
-      "byline" : "",
-      "excerpt" : ""
-    },
-    {
-      "title" : "Security threat level changes",
-      "imgSrc" : "",
-      "imgAlt" : "",
-      "url" : "test1.html",
-      "dateline" : "24 May 2017",
-      "byline" : "",
-      "excerpt" : ""
-    },
-    {
-      "title" : "Viewing your payslip, P60 & SOP availability",
-      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/01/SOP_ICONS-02-650x433.jpg",
-      "imgAlt" : "Alt tag goes here",
-      "url" : "test1.html",
-      "dateline" : "19 May 2017",
-      "byline" : "",
-      "excerpt" : ""
-    },
-    {
-      "title" : "Delivering the future",
-      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/05/Steve-Vine-650x433.jpg",
-      "imgAlt" : "Alt tag goes here",
-      "url" : "test1.html",
-      "dateline" : "18 May 2017",
-      "byline" : "",
+      "byline" : "Alex Foxleigh",
       "excerpt" : ""
     },
     {
@@ -76,40 +40,57 @@
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
       "dateline" : "17 May 2017",
-      "byline" : "",
+      "byline" : "Alex Foxleigh",
+      "excerpt" : ""
+    }
+  ],
+  "guidanceArticles" : [
+    {
+      "title" : "Security threat level changes",
+      "imgSrc" : "",
+      "imgAlt" : "",
+      "url" : "test1.html",
+      "dateline" : "24 May 2017",
+      "byline" : "Alex Foxleigh",
       "excerpt" : ""
     },
     {
-      "title" : "Civil Service Awards 2017",
-      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/05/20170517-Sir-J-Heywood-650x433.jpg",
+      "title" : "Viewing your payslip, P60 & SOP availability",
+      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/01/SOP_ICONS-02-650x433.jpg",
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
-      "dateline" : "17 May 2017",
-      "byline" : "",
+      "dateline" : "19 May 2017",
+      "byline" : "Alex Foxleigh",
       "excerpt" : ""
     },
     {
-      "title" : "Employee discounts on goods and services",
-      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/04/mylifestyle-logo-650x433.jpg",
+      "title" : "Delivering the future",
+      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/05/Steve-Vine-650x433.jpg",
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
-      "dateline" : "16 May 2017",
-      "byline" : "",
+      "dateline" : "18 May 2017",
+      "byline" : "Alex Foxleigh",
       "excerpt" : ""
     }
   ],
   "needToKnow" : [
     {
-      "title" : "Tell us how you can work smarter",
-      "imgSrc" : "https://1.bp.blogspot.com/_9omuav90kvE/RqfU7FCvVXI/AAAAAAAAAJk/3DX47U3F9Oo/s400/432_EruditeVandlism1_ed01.jpg",
-      "imgAlt" : "Frodo lives!",
-      "url": "http://fakeurl.com"
+      "title" : "IDAHOT",
+      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2016/04/Rainbow_flag_breeze-650x433.jpg",
+      "imgAlt" : "Alt tag goes here",
+      "url" : "test1.html",
+      "dateline" : "17 May 2017",
+      "byline" : "Alex Foxleigh",
+      "excerpt" : ""
     },
     {
-      "title" : "MoJ Awards shortlist announced",
-      "imgSrc" : "http://i0.kym-cdn.com/entries/icons/original/000/001/707/thecakeisalie.jpg",
-      "imgAlt" : "The cake is a lie!",
-      "url": "http://fakeurl.com"
+      "title" : "IDAHOT",
+      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2016/04/Rainbow_flag_breeze-650x433.jpg",
+      "imgAlt" : "Alt tag goes here",
+      "url" : "test1.html",
+      "dateline" : "17 May 2017",
+      "byline" : "Alex Foxleigh",
+      "excerpt" : ""
     }
   ],
   "events" : [
@@ -170,7 +151,7 @@
     {
       "title" : "Civil Service Learning",
       "url" : "http://fakeurl.com",
-      "class" : "csl"
+      "class" : "civil-service-learning"
     },
     {
       "title" : "IT portal",

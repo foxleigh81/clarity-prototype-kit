@@ -6,10 +6,16 @@
   {% if (context.excerpt !== "") %}
     {% include '../c-article-exceprt/view.njk' %}
   {% endif %}
-  {% if (context.dateline !== "") %}
-    <span class="c-article-item__dateline">{{ context.dateline }}</span>
-  {% endif %}
-  {% if (context.byline !== "") %}
-    <span class="c-article-item__byline">{{ context.byline }}</span>
-  {% endif %}
+  <div class="c-article-item__article-meta">
+    {% if (context.dateline !== "") %}
+      <span class="c-article-item__dateline">{{ context.dateline }}</span>
+    {% endif %}
+    {% if (context.byline !== "") %}
+      {% include '../c-article-byline/view.njk' %}
+    {% endif %}
+    <div class="c-categories">
+      <a href="" class="theme-hq">#HQ</a>
+      <a href="">#workload</a>
+    </div>
+  </div>
 </article>

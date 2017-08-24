@@ -5,6 +5,9 @@
 .c-app-list {
   clearfix();
   margin-bottom: $spacing;
+  padding: $spacing;
+  padding-bottom: 0;
+  background: #f0f0f0;
 
   li {
     column(1/2, $cycle: 2);
@@ -36,9 +39,10 @@
     display: inline-block;
     vertical-align: middle;
     border: 1px solid $border;
-    padding: $spacing*.5;
+    padding: $spacing*.3;
     margin-right: $spacing;
     font-size: $mantle;
     color: $border;
+    background: $light;
   }
 }
