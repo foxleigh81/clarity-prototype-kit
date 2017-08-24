@@ -1,12 +1,8 @@
 <section class="c-logo-bar">
   <div class="u-wrapper">
-    <a href="/" rel="home">
-      <img src="static/images/logo.jpg" alt="MOJ Logo"><span>HQ</span>
+    <a class="c-logo-bar__title" href="/" rel="home">
+      {{ meta.pageTitle }}
     </a>
-    <nav class="c-logo-bar__switch">
-      <a href="/agency-switcher">Contacts</a> |
-      <a href="/agency-switcher">Guidance</a> |
-      <a href="/agency-switcher">Switch intranet</a>
-    </nav>
+    {% include '../c-search-bar/view.njk' %}
   </div>
 </section>

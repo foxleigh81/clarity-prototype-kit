@@ -19,11 +19,6 @@
     "menuText" : "Menu",
     "item" : [
       {
-        "label" : "Home",
-        "url" : "/",
-        "state" : "all"
-      },
-      {
         "label" : "News",
         "url" : "/news",
         "state" : "noAuth"
@@ -34,17 +29,17 @@
         "state" : "noAuth"
       },
       {
-        "label" : "Guidance &amp; forms",
+        "label" : "Regions",
+        "url" : "/events",
+        "state" : "noAuth"
+      },
+      {
+        "label" : "Resources",
         "url" : "/guidance",
         "state" : "noAuth"
       },
       {
-        "label" : "About Us",
-        "url" : "/about",
-        "state" : "onlyAuth"
-      },
-      {
-        "label" : "Blog",
+        "label" : "Community",
         "url" : "blog",
         "state" : "onlyAuth"
       }
