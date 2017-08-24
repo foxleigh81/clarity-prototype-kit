@@ -1,9 +1,9 @@
 {
   "meta" : {
-    "pageTitle" : "HM Courts & Tribunal Service",
+    "pageTitle" : "Legal Aid Agency",
     "description" : "to be added",
     "canonical" : "index.html",
-    "agency" : "HMCTS"
+    "agency" : "LAA"
   },
   "featuredNewsArticles" : [
     {
@@ -13,7 +13,7 @@
       "url" : "test1.html",
       "dateline" : "18 May 2017",
       "byline" : "Shirley-Anne Mullen",
-      "agency" : "HMCTS",
+      "agency" : "LAA",
       "excerpt" : ""
     },
     {

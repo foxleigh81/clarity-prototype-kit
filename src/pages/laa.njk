@@ -1,0 +1,10 @@
+{% extends "../templates/layout.njk" %}
+{% block content %}
+    <section id="maincontent" class="u-wrapper l-main t-home" role="main">
+        <!-- c-home-page-primary starts here -->
+        {% include '../components/c-news-widget/view.njk' %}
+        {% include '../components/c-my-moj/view.njk' %}
+        {% include '../components/c-social-links/view.njk' %}
+        <!-- c-home-page-primary ends here -->
+  </section>
+{% endblock %}
