@@ -2,9 +2,15 @@
 {% block content %}
     <section id="maincontent" class="u-wrapper l-main t-home" role="main">
         <!-- c-home-page-primary starts here -->
-        {% include '../components/c-news-widget/view.njk' %}
-        {% include '../components/c-my-moj/view.njk' %}
-        {% include '../components/c-social-links/view.njk' %}
+        <section class="c-home-page-primary l-primary" role="main">
+            {% include '../components/c-news-widget/view.njk' %}
+        </section>
         <!-- c-home-page-primary ends here -->
-  </section>
+        <!-- c-home-page-secondary starts here -->
+        <section class="c-home-page-secondary l-secondary" role="complementary">
+            {% include '../components/c-my-moj/view.njk' %}
+            {% include '../components/c-social-links/view.njk' %}
+        </section>
+        <!-- c-home-page-secondary ends here -->
+    </section>
 {% endblock %}

@@ -13,7 +13,7 @@
     var tallestHeight = 0
     var heightCheck = 1
     for (var i = 0; i < container.length; i++) {
-      var height = $(container[i]).outerHeight(true)
+      var height = $(container[i]).outerHeight(false)
       if (height > tallestHeight) tallestHeight = height
       if (heightCheck === container.length) {
         // All items accounted for, now make all items the same height

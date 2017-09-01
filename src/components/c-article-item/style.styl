@@ -2,48 +2,36 @@
 @require "../../globals/css/_toolkit";
 
 .c-article-item {
-  position: relative;
+    clearfix();
+    position: relative;
     overflow hidden
     border-bottom: 0;
-    background: $dark;
+    background: $boxBg;
+    margin-bottom: $spacing*2;
+    display: table;
+
     h1 {
-      position absolute
-      top: $spacing*3
-      left: $spacing*3
-      font-size $crust*1.3
-      width: 80%;
-      text-shadow: 1px 1px 2px rgba($dark, .5)
+      font-size $outerCore
       a {
-        color $light
+        color $primary;
       }
     }
-    &__article-meta {
-      width: 100%;
+    &__meta {
       position absolute;
-      bottom: $spacing;
-      left: 0;
+      bottom: $spacing
       a:hover { 
         text-decoration underline
        }
     }
     &__dateline {
-      display none
-      position absolute
-      bottom: $spacing;
-      right: $spacing;
-      text-shadow: 1px 1px 2px rgba($dark, .3)
-      color: $light;
-      font-weight bold
+      color: $dark;
     }
     .c-article-byline {
-      float:left;
+      display none
       margin-left: $spacing;
-      color: $light;
-      text-shadow: 1px 1px 2px rgba($dark, .3)
       a {
-        color: $light;
-        font-weight bold
-        
+        color: $dark;
+       
       }
       img {
         width $spacing*5
@@ -51,60 +39,38 @@
         border-radius: 100%;
         vertical-align middle
         margin-right $spacing
-        opacity 1
       }
     }
+
     .c-categories {
-      margin-top $spacing*1.4
-      a {
-        color: $light;
-        font-weight bold
-        text-shadow: 1px 1px 2px rgba($dark, .3)
-        background: rgba(darken($boxBg, 45%), .7);
-        padding: 0 $spacing*.5
-        margin-left $spacing*.7
-        hq
-
-
-
-
-
-        &.theme-hmpps,
-        &.theme-jac,
-        &.theme-ospt,
-        &.theme-lc,
-        &.theme-cica,
-        &.theme-hq {
-          background: rgba($primary, .7);
+      margin-top $spacing*1
+      li {
+        display inline
+        text-transform: capitalize;
+        &:after {
+          content: " | "
         }
-        &.theme-hmcts {
-          background: rgba($hmcts_primary, .7);
-        }
-        &.theme-laa {
-          background: rgba($laa_primary, .7);
-        }
-        &.theme-opg {
-          background: rgba($opg_primary, .7);
-        }
-        &.theme-pb {
-          background: rgba($pb_primary, .7);
+        &:last-child {
+          &:after {
+            display none
+          }
         }
       }
     }
-  padding-bottom: $spacing;
-  border-bottom: 1px solid $border;
-  margin-bottom: $spacing;
-  
-
 
   img {
+    display: table-cell
+    height: 100%;
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    opacity .7
-    &:hover {
-      opacity .9
-    }
+  }
+
+  &__content {
+    position relative
+    vertical-align: top
+    width: 50%;
+    padding: $spacing $spacing*1.5 $spacing*7;
+    display: table-cell;
+    
   }
 
   h1 {
@@ -118,48 +84,51 @@
 
   // Featured news
   .c-featured-news-list & {
-    height: 300px;
     +above('s') {
-      column(1/2, $cycle: 2);      
+      &:first-child {
+        column(1); 
+        
+        h1 {
+          font-size: $mantle;
+        }  
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        column(1/2)
+        > img, 
+        .c-article-item__content {
+          stack();
+          min-height: $spacing*15
+        }
+      }
     }
   }
 
   // Regular news
   .c-news-list & {
     clearfix();
-    +above('s') {
-      column(1/3, $cycle: 3);
-      height: 140px;
-      margin-bottom $spacing*5
-    }
     h1 {
-      top: $spacing;
-      left: $spacing
-      font-size $outerCore*1.2
+      font-size: $innerCore;
+      line-height 1.2
+      margin-bottom $spacing*1.3
     }
-    &__excerpt {
-      display: none;
+
+    
+    +above('s') {
+      column(1/2, $cycle: 2);
+    }
+
+    &__content {
+      padding-bottom: $spacing*.5
+    }
+    &__meta {
+      position relative
+      font-size: $bodyCopy;
     }
 
     .c-categories {
       display none
     }
-     .c-article-byline img {
-       width: $spacing*3
-       height: $spacing*3
-     }
-  }
-
-  // Blog feed & article list
-  .c-article-list &,
-  .c-blog-feed & {
-    clearfix();
-    h1 {
-      top: $spacing;
-      left: $spacing
-      font-size: $outerCore;
-    }
-    height: 130px;
   }
 
   .c-blog-feed & {

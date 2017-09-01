@@ -14,7 +14,9 @@
       "dateline" : "18 May 2017",
       "byline" : "Shirley-Anne Mullen",
       "agency" : "HMCTS",
-      "excerpt" : ""
+      "type" : "news",
+      "tags" : [ "Strategy" ],
+      "excerpt" : "Richard Heaton welcomes new appointment"
     },
     {
       "title" : "Our future judicial relationship with the EU",
@@ -24,6 +26,19 @@
       "dateline" : "18 May 2017",
       "byline" : "Shirley-Anne Mullen",
       "agency" : "HQ",
+      "type" : "news",
+      "tags" : [ "Justice matters" ],
+      "excerpt" : ""
+    },
+    {
+      "title" : "Terrorist attack in Manchester",
+      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2016/12/Richard-Heaton_IMG_9588_960x640-650x433.jpg",
+      "imgAlt" : "Alt tag goes here",
+      "url" : "test1.html",
+      "dateline" : "24 May 2017",
+      "byline" : "Shirley-Anne Mullen",
+      "type" : "discussion",
+      "tags" : [ "From MoJ" ],
       "excerpt" : ""
     }
   ],
@@ -38,15 +53,6 @@
       "excerpt" : ""
     },
     {
-      "title" : "Terrorist attack in Manchester",
-      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2016/12/Richard-Heaton_IMG_9588_960x640-650x433.jpg",
-      "imgAlt" : "Alt tag goes here",
-      "url" : "test1.html",
-      "dateline" : "24 May 2017",
-      "byline" : "Shirley-Anne Mullen",
-      "excerpt" : ""
-    },
-    {
       "title" : "IDAHOT",
       "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2016/04/Rainbow_flag_breeze-650x433.jpg",
       "imgAlt" : "Alt tag goes here",
@@ -54,9 +60,7 @@
       "dateline" : "17 May 2017",
       "byline" : "Shirley-Anne Mullen",
       "excerpt" : ""
-    }
-  ],
-  "guidanceArticles" : [
+    },
     {
       "title" : "Security threat level changes",
       "imgSrc" : "",

@@ -39,7 +39,7 @@
         "state" : "noAuth"
       },
       {
-        "label" : "Community",
+        "label" : "Blogs",
         "url" : "blog",
         "state" : "onlyAuth"
       }

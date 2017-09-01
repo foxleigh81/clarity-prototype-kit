@@ -1,23 +1,28 @@
 
-<article class="c-article-item js-article-item">
+<article class="c-article-item js-article-item c-article-item--{{context.type}}">
   {% if (context.imgSrc !== "") %}
     <img src="{{ context.imgSrc }}" alt="{{ context.imgAlt }}">
   {% endif %}
+  <div class="c-article-item__content">
     <h1><a href="{{ context.url }}">{{ context.title }}</a></h1>
-  {% if (context.excerpt !== "") %}
-    {% include '../c-article-exceprt/view.njk' %}
-  {% endif %}
-  <div class="c-article-item__article-meta">
-    {% if (context.dateline !== "") %}
-      <span class="c-article-item__dateline">{{ context.dateline }}</span>
+    {% if (context.excerpt !== "") %}
+      {% include '../c-article-exceprt/view.njk' %}
     {% endif %}
-    {% if (context.byline !== "") %}
-      {% include '../c-article-byline/view.njk' %}
-    {% endif %}
-    <div class="c-categories">
-      <a href="" class="theme-{{context.agency | lower}}">#{{context.agency}}</a>
-      <a href="">#news</a>
-      <a href="">#workload</a>
+    <div class="c-article-item__meta">
+      {% if (context.dateline !== "") %}
+        <span class="c-article-item__dateline">{{ context.dateline }}</span>
+      {% endif %}
+      {% if (context.byline !== "") %}
+        {% include '../c-article-byline/view.njk' %}
+      {% endif %}
+      <div class="c-categories">
+        <ul>
+          <li><a href="">{{context.type}}</a></li>
+           {% for item in context.tags %}
+            <li>{{item}}</li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </div>
 </article>
