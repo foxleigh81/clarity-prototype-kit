@@ -9,11 +9,11 @@
       {% include '../c-article-exceprt/view.njk' %}
     {% endif %}
     <div class="c-article-item__meta">
+    {% if (context.byline !== "") %}
+        {% include '../c-article-byline/view.njk' %}
+      {% endif %}
       {% if (context.dateline !== "") %}
         <span class="c-article-item__dateline">{{ context.dateline }}</span>
-      {% endif %}
-      {% if (context.byline !== "") %}
-        {% include '../c-article-byline/view.njk' %}
       {% endif %}
       <div class="c-categories">
         <ul>

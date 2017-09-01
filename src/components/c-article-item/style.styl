@@ -24,8 +24,10 @@
        }
     }
     &__dateline {
+      font-size: $smallCopy;
       color: $dark;
     }
+
     .c-article-byline {
       display none
       margin-left: $spacing;
@@ -123,7 +125,6 @@
     }
     &__meta {
       position relative
-      font-size: $bodyCopy;
     }
 
     .c-categories {
@@ -142,11 +143,40 @@
 
   // If the excerpt has been output, hide it on the blog summary component
   .c-blog-feed & {
+    display:block;
+    background: transparent;
+    h1 {
+      padding: 0 0 $spacing 0
+    }
     &__excerpt {
       display: none;
     }
-    > img {
-      opacity .3
+    &__content {
+      width: 85%;
+      display:inline-block;
+      padding: 0 0 0 $spacing;
+    }
+    &__meta {
+      position relative
+    }
+    .c-categories {
+      display none
+    }
+    .c-article-byline {
+      display block
+      margin: 0;
+      a {
+        color: $primary;
+      }
+      img {
+        display none
+      }
+    }
+    img {
+      display block
+      float:left;
+      border-radius: 100%;
+      width: 15%;
     }
   }
 
