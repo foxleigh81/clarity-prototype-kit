@@ -1,0 +1,165 @@
+{
+  "meta" : {
+    "pageTitle" : "HM Courts & Tribunal Service",
+    "description" : "to be added",
+    "canonical" : "resources.html",
+    "agency" : "HMCTS"
+  },
+  "myWork" : [
+    {
+      "title" : "Crown Court",
+      "url" : ""
+    },
+    {
+      "title" : "Enforcement",
+      "url" : ""
+    },
+    {
+      "title" : "Family",
+      "url" : ""
+    },
+    {
+      "title" : "Legal Services",
+      "url" : ""
+    },
+    {
+      "title" : "Magistrates - pre-bail charge",
+      "url" : ""
+    },
+    {
+      "title" : "Tribunals",
+      "url" : ""
+    }
+  ],
+  "quickLinks" : [
+    {
+      "title" : "Courts and tribnunal finder",
+      "url" : ""
+    },
+    {
+      "title" : "Form finder",
+      "url" : ""
+    },
+    {
+      "title" : "IT portal",
+      "url" : ""
+    },
+    {
+      "title" : "SOP",
+      "url" : ""
+    },
+    {
+      "title" : "Travel booking",
+      "url" : ""
+    }
+  ],
+  "commonResources" : [
+    {
+      "title" : "Buildings and facilities",
+      "url" : "",
+      "desc" : "Get details on HMCTS offices and the services they offer to employees and visitors."
+    },
+    {
+      "title" : "HR",
+      "url" : "",
+      "desc" : "Information on pay, pensions, performance and conduct at work."
+    },
+    {
+      "title" : "Health and safety",
+      "url" : "",
+      "desc" : "Learn about fire safety, assessing risk and workplace wellbeing."
+    },
+    {
+      "title" : "People",
+      "url" : "",
+      "desc" : "Includes diversity and inclusion, staff directories, employee statistics and survey results."
+    },
+    {
+      "title" : "IT & Digital",
+      "url" : "",
+      "desc" : "Support information, planned engineering works, opening hours and more."
+    },
+    {
+      "title" : "Communications",
+      "url" : "",
+      "desc" : "Get communication contacts, branding templates and social media guidance."
+    },
+    {
+      "title" : "Sustainability and the environment",
+      "url" : "Find out about HMCTS initiatives, how to plan events or become a Green Champion..",
+      "desc" : ""
+    },
+    {
+      "title" : "Knowledge and information",
+      "url" : "",
+      "desc" : "How to manage, protect and provide information to meet policies and legislation."
+    },
+    {
+      "title" : "Security",
+      "url" : "",
+      "desc" : "Learn about corporate security policies, incident reporting and emergencies.."
+    }
+  ],
+  "furtherResources" : [
+    {
+      "title" : "Change Management",
+      "url" : ""
+    },
+    {
+      "title" : "Internal Audit",
+      "url" : ""
+    },
+    {
+      "title" : "Operational Delivery Profession (ODP)",
+      "url" : ""
+    },
+    {
+      "title" : "Charities and volunteering",
+      "url" : ""
+    },
+    {
+      "title" : "Legal Services",
+      "url" : ""
+    },
+    {
+      "title" : "Research and Analysis",
+      "url" : ""
+    },
+    {
+      "title" : "Commercial and Contract Management (CCM)",
+      "url" : ""
+    },
+    {
+      "title" : "Nominiations",
+      "url" : ""
+    },
+    {
+      "title" : "Reserve forces",
+      "url" : ""
+    },
+    {
+      "title" : "Devolution",
+      "url" : ""
+    },
+    {
+      "title" : "Policy making",
+      "url" : ""
+    },
+    {
+      "title" : "Risk Management",
+      "url" : ""
+    },
+    {
+      "title" : "Financial management",
+      "url" : ""
+    },
+    {
+      "title" : "Pubilc consultation guidance",
+      "url" : ""
+    },
+    {
+      "title" : "Working with arm's length bodies (ALBs)",
+      "url" : ""
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<section class="c-common-resources">
+  <h1 class="o-title o-title--section">Common resources</h1>
+  <ul>
+    {% for item in commonResources %}
+      <li>
+        <div>
+          <h2><a href="{{item.url}}">{{item.title}}</a></h2>
+          <p>{{item.desc}}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+  
+</section>

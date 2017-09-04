@@ -3,7 +3,7 @@
     <ul>
       {# Loop through navigation and show the links #}
       {% for item in globalNavigation.item %}
-        <li><a href="{{item.url}}">{{item.label}}</a></li>
+        <li><a href="{{item.url}}?agency={{meta.agency | lower}}">{{item.label}}</a></li>
       {% endfor %}
       <li><a href="">Change intranet</a>
         <nav>

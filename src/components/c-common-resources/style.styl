@@ -1,13 +1,10 @@
 // include the toolkit (a suite of variables, classes and mixins)
 @require "../../globals/css/_toolkit"
 
-.c-quick-links {
-  padding: $spacing;
-  height: 100%;
-  background: $boxBg
-  column(1/3, $cycle: 2)
-  h1 {   
-    font-size: $innerCore;
+.c-common-resources {
+  clearfix();
+  li {
+    column(1/3, $cycle: 3)
   }
   a {
     font-weight bold
