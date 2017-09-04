@@ -26,7 +26,7 @@
       },
       {
         "label" : "Resources",
-        "url" : "/resources-hmcts.html",
+        "url" : "/resources-hq.html",
         "state" : "noAuth"
       },
       {
@@ -279,24 +279,14 @@
   ],
   "socialLinks" : [
     {
-      "title" : "HMCTS CEO on Twitter",
+      "title" : "MoJ on Twitter",
       "url" : "",
       "class" : "twitter"
     },
     {
-      "title" : "HMCTS on Twitter",
-      "url" : "",
-      "class" : "twitter"
-    },
-    {
-      "title" : "HMCTS on Yammer",
+      "title" : "MoJ on Yammer",
       "url" : "",
       "class" : "yammer"
-    },
-    {
-      "title" : "HMCTS on LinkedIn",
-      "url" : "",
-      "class" : "linkedin"
     }
   ]
 }
