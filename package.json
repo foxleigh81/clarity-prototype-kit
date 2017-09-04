@@ -28,6 +28,7 @@
     "chalk": "2.1.0",
     "del": "latest",
     "express": "^4.13.4",
+    "express-basic-auth": "^1.1.2",
     "gulp": "^3.9.0",
     "gulp-add-src": "^0.2.0",
     "gulp-cache": "latest",

@@ -1,10 +1,21 @@
-var express = require('express');
-var app = express();
+var express = require('express')
+var app = express()
+var basicAuth = require('express-basic-auth')
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 5000
 
-app.use(express.static(__dirname + '/dist'));
+function isHeroku () {
+  return process.env.NODE && ~process.env.NODE.indexOf('heroku') ? true : false
+}
 
-app.listen(port);
+if (isHeroku()) {
+  app.use(basicAuth({
+    users: { 'admin': process.env.AUTH_KEY }
+  }))
+}
 
-console.log('server started ' + port);
+app.use(express.static(__dirname + '/dist'))
+
+app.listen(port)
+
+console.log('server started ' + port)
