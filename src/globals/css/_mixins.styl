@@ -57,12 +57,12 @@ button(bgc) {
   background-color: bgc;
   padding: $spacing $spacing*3;
   border: 0;
-  font-size: $outerCore;
+  font-size: $bodyCopy;
   cursor: pointer;
   text-decoration:none;
   &:hover {
     color: $light;
-    background-color: lighten(bgc, 20%);
+    background-color: darken(bgc, 20%);
   }
   &.disabled {
     cursor: auto;

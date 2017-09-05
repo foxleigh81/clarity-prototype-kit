@@ -32,23 +32,29 @@
   clear:both;
   display: block;
   margin-bottom $spacing*3
+  font-weight bold
+  &:after {
+    padding-left: $spacing;
+    vertical-align: middle;
+    use-icon("\f054")
+  }
 }
 
 .o-button {
-  display: inline-block;
-  padding: $spacing*.6 $spacing*1.5 $spacing*.5;
-  cursor: pointer;
-  text-decoration: none;
-  vertical-align: top;
-  background-color: $button;
-  box-shadow: 0 2px 0 darken($button, 80%);
-  color: $light;
-  font-size: $outerCore;
-  border: none;
-  line-height: $lineHeight*1.2;
-  &:hover {
-    background-color: darken($button, 20%);
+  button($primary)
+  .agency-hmcts & {
+    button($hmcts_primary)
   }
+  .agency-opg & {
+    button($opg_primary)
+  }
+  .agency-laa & {
+    button($laa_primary)
+  }
+  .agency-pb & {
+    button($pb_primary)
+  }
+  
 }
 
 // A box which clears anything before or after it and has some padding and margin applied

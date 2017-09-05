@@ -15,6 +15,9 @@
       {% if (context.dateline !== "") %}
         <span class="c-article-item__dateline">{{ context.dateline }}</span>
       {% endif %}
+      {% if (context.comments >= 5) %}
+        {% include '../c-article-interactions/view.njk' %}
+      {% endif %}
       <div class="c-categories">
         <ul>
           <li><a href="">{{context.type}}</a></li>

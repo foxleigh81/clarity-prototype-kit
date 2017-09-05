@@ -26,7 +26,19 @@
     background: lighten($boxBg, 50%)
     &:focus {
       outline: 0;
-      background: lighten($boxBg, 30%)
+      background: saturation(lighten($primary, 90%), 30%)
+      .agency-hmcts & {
+        background: saturation(lighten($hmcts_primary, 90%), 30%)
+      }
+      .agency-laa & {
+        background: saturation(lighten($laa_primary, 90%), 30%)
+      }
+      .agency-opg & {
+        background: saturation(lighten($opg_primary, 90%), 30%)
+      }
+      .agency-pb & {
+        background: saturation(lighten($pb_primary, 90%), 30%)
+      }
     }
   }
 
@@ -42,7 +54,6 @@
     }
     &:hover {
       cursor: pointer;
-      color: $linkFocus;
     }
   }
 
@@ -53,9 +64,22 @@
     margin-bottom $spacing*3
     button {
       background-color: darken($boxBg, 30%);
-    }
-    .agency-opg & {
-     //background-color: $opg_primary;
+    
+      &:hover {
+        background-color $primary;
+        .agency-opg & {
+          background-color: $opg_primary;
+        }
+        .agency-laa & {
+          background-color: $laa_primary;
+        }
+        .agency-hmcts & {
+          background-color: $hmcts_primary;
+        }
+        .agency-pb & {
+          background-color: $pb_primary;
+        }
+      }
     }
   }
 

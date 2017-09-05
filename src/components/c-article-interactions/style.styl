@@ -1,0 +1,26 @@
+// include the toolkit (a suite of variables, classes and mixins)
+@require "../../globals/css/_toolkit"
+
+.c-article-interactions {
+  display: inline-block;
+  padding-left $spacing*.5
+  &:before {
+    content: "|"
+    padding: 0 $spacing*.3;
+  }
+ div {
+   &:before {
+     vertical-align: middle
+     padding-left $spacing*.5
+     padding-right $spacing*.2
+   }
+   display inline-block
+ }
+  &__comments:before {
+    use-icon("\e0cc")
+  }
+  &__likes:before {
+    use-icon("\f087")
+  }
+}
+

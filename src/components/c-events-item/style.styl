@@ -5,7 +5,9 @@
 .c-events-item {
   position: relative;
   clearfix();
-  padding-bottom: $spacing;
+  background: $light;
+  padding: $spacing;
+  margin-bottom: $spacing;
   h1 {
     ff-title();
     margin-bottom: $spacing;
@@ -32,10 +34,5 @@
   }
   /* PARENT OVVERIDES */
 
-  .c-events-list & {
-    +above(m) {
-      margin-bottom: 0;
-      
-    }
-  }
+  
 }

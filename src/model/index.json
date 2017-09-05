@@ -10,6 +10,11 @@
     "menuText" : "Menu",
     "item" : [
       {
+        "label" : "Home",
+        "url" : "https://intranet.justice.gov.uk/",
+        "state" : "noAuth"
+      },
+      {
         "label" : "News",
         "url" : "https://intranet.justice.gov.uk/newspage/",
         "state" : "noAuth"
@@ -47,7 +52,9 @@
       "agency" : "HMCTS",
       "type" : "news",
       "tags" : [ "Strategy" ],
-      "excerpt" : "Richard Heaton welcomes new appointment"
+      "excerpt" : "Richard Heaton welcomes new appointment",
+      "comments" : 6,
+      "likes" : 67
     },
     {
       "title" : "Our future judicial relationship with the EU",
@@ -67,10 +74,13 @@
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
       "dateline" : "24 May 2017",
-      "byline" : "Shirley-Anne Mullen",
-      "type" : "discussion",
+      "byline" : "Richard Heaton",
+      "byImg" : "https://s3-eu-west-1.amazonaws.com/moj-wp-prod/wp-content/uploads/2015/10/Richard-Heaton_IMG_9588_960x640-128x128.jpg",
+      "type" : "blogs",
       "tags" : [ "From MoJ" ],
-      "excerpt" : ""
+      "excerpt" : "",
+      "comments" : 8,
+      "likes" : 17
     }
   ],
   "newsArticles" : [
@@ -81,24 +91,33 @@
       "url" : "test1.html",
       "dateline" : "24 May 2017",
       "byline" : "Shirley-Anne Mullen",
+      "type" : "news",
+      "tags" : [ "From MoJ" ],
       "excerpt" : ""
     },
     {
-      "title" : "IDAHOT",
+      "title" : "IDAHOT - My own experience",
       "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2016/04/Rainbow_flag_breeze-650x433.jpg",
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
       "dateline" : "17 May 2017",
-      "byline" : "Shirley-Anne Mullen",
-      "excerpt" : ""
+      "byline" : "Nathaniel Dale",
+      "byImg" : "https://s3-eu-west-1.amazonaws.com/moj-wp-prod/wp-content/uploads/2016/05/Nathaniel-Dale-128x128.jpg",
+      "type" : "blogs",
+      "tags" : [ "From MoJ" ],
+      "excerpt" : "",
+      "comments" : 11,
+      "likes" : 136
     },
     {
       "title" : "Security threat level changes",
-      "imgSrc" : "",
-      "imgAlt" : "",
+      "imgSrc" : "http://d.ibtimes.co.uk/en/full/1391313/ministry-justice.jpg",
+      "imgAlt" : "MoJ Entrance",
       "url" : "test1.html",
       "dateline" : "24 May 2017",
       "byline" : "Shirley-Anne Mullen",
+      "type" : "news",
+      "tags" : [ "Announcement" ],
       "excerpt" : ""
     },
     {
@@ -108,6 +127,8 @@
       "url" : "test1.html",
       "dateline" : "19 May 2017",
       "byline" : "Shirley-Anne Mullen",
+      "type" : "news",
+      "tags" : [ "HMCTS" ],
       "excerpt" : ""
     },
     {
@@ -238,6 +259,9 @@
       "url" : "test1.html",
       "dateline" : "30 May 2017",
       "byline" : "Roshnee Patel",
+      "byImg" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/05/smaller-image-128x128.jpg",
+      "type" : "blogs",
+      "tags" : [ "From MoJ" ],
       "excerpt" : ""
     },
     {
@@ -247,6 +271,9 @@
       "url" : "test1.html",
       "dateline" : "26 May 2017",
       "byline" : "Amie Alekna",
+      "byImg" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/05/Amie-1-128x128.jpg",      
+      "type" : "blogs",
+      "tags" : [ "From MoJ" ],
       "excerpt" : ""
     },
     {
@@ -256,6 +283,9 @@
       "url" : "test1.html",
       "dateline" : "24 May 2017",
       "byline" : "Dawood Mamoon",
+      "byImg" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/05/dawood_mamoon_image-128x128.jpg",
+      "type" : "blogs",
+      "tags" : [ "From MoJ" ],
       "excerpt" : ""
     },
     {
@@ -265,6 +295,9 @@
       "url" : "test1.html",
       "dateline" : "24 May 2017",
       "byline" : "Sara Vogt",
+      "byImg" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/05/Sara-Vogt-photo-2-128x128.jpg",
+      "type" : "blogs",
+      "tags" : [ "From MoJ" ],
       "excerpt" : ""
     },
     {
@@ -274,12 +307,15 @@
       "url" : "test1.html",
       "dateline" : "23 May 2017",
       "byline" : "Aidan Liriano",
+      "byImg" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/05/My-Photo-People-Finder-128x128.jpg",
+      "type" : "blogs",
+      "tags" : [ "From MoJ" ],
       "excerpt" : ""
     }
   ],
   "socialLinks" : [
     {
-      "title" : "HMCTS CEO on Twitter",
+      "title" : "HMCT S CEO on Twitter",
       "url" : "",
       "class" : "twitter"
     },

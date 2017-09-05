@@ -2,7 +2,7 @@
 @require "../../globals/css/_toolkit"
 
 .c-calendar-icon {
-  border: 1px solid $border;
+  border: 1px solid $dark;
   text-decoration: none;
   a {
     text-decoration: none;
@@ -12,13 +12,16 @@
     text-align: center;
   }
   &--dow {
-    background-color: $boxBg;
+    background-color: #db0813;
+    color: $light;
+    font-weight bold
     font-size: $smallCopy;
     padding-top: $spacing*.2;
   }
   &--dom {
     font-size: $mantle;
     font-weight: bold;
+    padding-top: $spacing*.2;
   }
   &--my {
     font-size: $smallCopy;
