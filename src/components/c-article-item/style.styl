@@ -1,6 +1,8 @@
 // include the toolkit (a suite of variables, classes and mixins)
 @require "../../globals/css/_toolkit";
 
+//FIXME: There are multiple components being styled here and not all are parent overrides, this should be fixed before porting to clarity.
+
 .c-article-item {
     clearfix();
     position: relative;
@@ -42,6 +44,7 @@
         border-radius: 100%;
         vertical-align middle
         margin-right $spacing
+        margin-bottom $spacing
       }
     }
 
@@ -154,6 +157,8 @@
     &__meta {
       position relative
     }
+
+     
     .c-article-interactions,
     .c-article-byline,
     .c-categories {

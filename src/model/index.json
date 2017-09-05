@@ -11,7 +11,7 @@
     "item" : [
       {
         "label" : "Home",
-        "url" : "https://intranet.justice.gov.uk/",
+        "url" : "/",
         "state" : "noAuth"
       },
       {

@@ -10,6 +10,11 @@
     "menuText" : "Menu",
     "item" : [
       {
+        "label" : "Home",
+        "url" : "/",
+        "state" : "noAuth"
+      },
+      {
         "label" : "News",
         "url" : "https://intranet.justice.gov.uk/newspage/",
         "state" : "noAuth"
@@ -117,8 +122,8 @@
     },
     {
       "title" : "Sustainability and the environment",
-      "url" : "Find out about HMCTS initiatives, how to plan events or become a Green Champion..",
-      "desc" : ""
+      "url" : "",
+      "desc" : "Find out about HMCTS initiatives, how to plan events or become a Green Champion."
     },
     {
       "title" : "Knowledge and information",
