@@ -9,8 +9,8 @@ Any development tasks or optimisations which need to be made should be listed he
 
 ## Tasks:
 
-1. Set up tests (Cucumber and Gerhkin)
-2. Make import ctgen into package and convert it to use nunjucks instead of PHP
-3. Import homepage data
+1. The "white box with 1rem padding style has become common throughout the site, it makes sense to make it a mixin and utility class and apply it throughout"
+
+
 
 ## Issues
