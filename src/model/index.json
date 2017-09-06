@@ -103,7 +103,7 @@
       "dateline" : "17 May 2017",
       "byline" : "Nathaniel Dale",
       "byImg" : "https://s3-eu-west-1.amazonaws.com/moj-wp-prod/wp-content/uploads/2016/05/Nathaniel-Dale-128x128.jpg",
-      "type" : "blogs",
+      "type" : "news",
       "tags" : [ "From MoJ" ],
       "excerpt" : "",
       "comments" : 11,
@@ -137,26 +137,6 @@
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
       "dateline" : "18 May 2017",
-      "byline" : "Shirley-Anne Mullen",
-      "excerpt" : ""
-    }
-  ],
-  "needToKnow" : [
-    {
-      "title" : "IDAHOT",
-      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2016/04/Rainbow_flag_breeze-650x433.jpg",
-      "imgAlt" : "Alt tag goes here",
-      "url" : "test1.html",
-      "dateline" : "17 May 2017",
-      "byline" : "Shirley-Anne Mullen",
-      "excerpt" : ""
-    },
-    {
-      "title" : "IDAHOT",
-      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2016/04/Rainbow_flag_breeze-650x433.jpg",
-      "imgAlt" : "Alt tag goes here",
-      "url" : "test1.html",
-      "dateline" : "17 May 2017",
       "byline" : "Shirley-Anne Mullen",
       "excerpt" : ""
     }
@@ -321,7 +301,7 @@
   ],
   "socialLinks" : [
     {
-      "title" : "HMCT S CEO on Twitter",
+      "title" : "HMCTS CEO on Twitter",
       "url" : "",
       "class" : "twitter"
     },

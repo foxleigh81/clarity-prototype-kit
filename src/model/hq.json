@@ -1,9 +1,9 @@
 {
   "meta" : {
-    "pageTitle" : "Office of the Public Guardian",
+    "pageTitle" : "Ministry of Justice",
     "description" : "to be added",
     "canonical" : "index.html",
-    "agency" : "OPG"
+    "agency" : "HQ"
   },
   "globalNavigation" : {
     "componentClass" : "c-global-nav",
@@ -11,7 +11,7 @@
     "item" : [
       {
         "label" : "Home",
-        "url" : "/opg.html",
+        "url" : "/hq.html",
         "state" : "noAuth"
       },
       {
@@ -301,12 +301,12 @@
   ],
   "socialLinks" : [
     {
-      "title" : "OPG on Twitter",
+      "title" : "MoJ on Twitter",
       "url" : "",
       "class" : "twitter"
     },
     {
-      "title" : "OPG on Yammer",
+      "title" : "MoJ on Yammer",
       "url" : "",
       "class" : "yammer"
     }

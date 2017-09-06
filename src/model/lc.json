@@ -1,9 +1,9 @@
 {
   "meta" : {
-    "pageTitle" : "Office of the Public Guardian",
+    "pageTitle" : "Law Commision",
     "description" : "to be added",
     "canonical" : "index.html",
-    "agency" : "OPG"
+    "agency" : "LC"
   },
   "globalNavigation" : {
     "componentClass" : "c-global-nav",
@@ -11,7 +11,7 @@
     "item" : [
       {
         "label" : "Home",
-        "url" : "/opg.html",
+        "url" : "/lc.html",
         "state" : "noAuth"
       },
       {
@@ -301,12 +301,12 @@
   ],
   "socialLinks" : [
     {
-      "title" : "OPG on Twitter",
+      "title" : "Law Commission on Twitter",
       "url" : "",
       "class" : "twitter"
     },
     {
-      "title" : "OPG on Yammer",
+      "title" : "Law Commission on Yammer",
       "url" : "",
       "class" : "yammer"
     }

@@ -1,9 +1,9 @@
 {
   "meta" : {
-    "pageTitle" : "Office of the Public Guardian",
+    "pageTitle" : "The Parole Board",
     "description" : "to be added",
     "canonical" : "index.html",
-    "agency" : "OPG"
+    "agency" : "PB"
   },
   "globalNavigation" : {
     "componentClass" : "c-global-nav",
@@ -11,7 +11,7 @@
     "item" : [
       {
         "label" : "Home",
-        "url" : "/opg.html",
+        "url" : "/pb.html",
         "state" : "noAuth"
       },
       {
@@ -301,12 +301,12 @@
   ],
   "socialLinks" : [
     {
-      "title" : "OPG on Twitter",
+      "title" : "Parole Board on Twitter",
       "url" : "",
       "class" : "twitter"
     },
     {
-      "title" : "OPG on Yammer",
+      "title" : "Parole Board on Yammer",
       "url" : "",
       "class" : "yammer"
     }
