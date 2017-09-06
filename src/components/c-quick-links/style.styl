@@ -4,10 +4,37 @@
 .c-quick-links {
   padding: $spacing;
   height: 100%;
-  background: lighten($hmcts_primary, 60%);
+  background: saturation(lighten($primary, 80%), 30%);
+  .agency-hmcts & {
+    a {
+      color: darken($hmcts_primary, 20%);
+    }
+    background: lighten($hmcts_primary, 60%);
+  }
+  .agency-opg & {
+    a {
+      color: darken($opg_primary, 20%);
+    }
+    background: saturation(lighten($opg_primary, 80%), 30%);
+  }
+  .agency-laa & {
+    a {
+      color: darken($laa_primary, 20%);
+    }
+    background: lighten($laa_primary, 80%);
+  }
+  .agency-pb & {
+    a {
+      color: darken($pb_primary, 20%);
+    }
+    background: lighten($pb_primary, 80%);
+  }
   column(1/3, $cycle: 2)
   h1 {   
     font-size: $innerCore;
+  }
+  li {
+    margin-bottom $spacing*.3
   }
   a {
     font-weight bold
