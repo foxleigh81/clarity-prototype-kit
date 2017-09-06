@@ -25,13 +25,8 @@
         "state" : "noAuth"
       },
       {
-        "label" : "Regions",
-        "url" : "https://intranet.justice.gov.uk/regional-pages/",
-        "state" : "noAuth"
-      },
-      {
         "label" : "Resources",
-        "url" : "/resources-hmcts.html",
+        "url" : "/resources-hq.html",
         "state" : "noAuth"
       },
       {

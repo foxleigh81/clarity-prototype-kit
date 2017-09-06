@@ -21,6 +21,7 @@ $(document).ready(function () {
   $('.js-need-to-know-widget').moji_slider(true)
   $('.c-news-list > .js-article-item').moji_equaliser()
   $('.c-common-resources li').moji_equaliser()
+  $('.l-page-top > section').moji_equaliser()
   // This script is attached to a template and not a component
   $('.js-tabbed-content-container').moji_tabbedContent()
 })

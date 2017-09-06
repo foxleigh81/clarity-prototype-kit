@@ -1,5 +1,12 @@
 <section class="c-quick-links">
+{# FIXME: This is a hack for the prototype, it shouldn't make it into the production site #}
+{% if meta.agency === "HMCTS" %}
   <h1 class="o-title o-title--section">{{meta.agency}} tools and services</h1>
+{% elif meta.agency === "HQ" %}
+  <h1 class="o-title o-title--section">MoJ work and services</h1>
+{% else %}
+  <h1 class="o-title o-title--section">{{meta.agency}} work and services</h1>
+{% endif %}
   <ul>
     {% for link in quickLinks %}
       <li><a href="{{ link.url }}"> {{ link.title }}</a></li>
