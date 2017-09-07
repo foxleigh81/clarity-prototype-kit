@@ -3,6 +3,60 @@
     "host" : "localhost:5000",
     "siteName" : "Clarity rebuild prototype"
   },
+  "navigation" : {
+    "componentClass" : "c-global-nav",
+    "menuText" : "Menu",
+    "item" : [
+      {
+        "label" : "Home",
+        "url" : "/",
+        "state" : "noAuth",
+        "agencies" : [
+          "all"
+        ]
+      },
+      {
+        "label" : "News",
+        "url" : "https://intranet.justice.gov.uk/newspage/",
+        "state" : "noAuth",
+        "agencies" : [
+          "all"
+        ]
+      },
+      {
+        "label" : "Events",
+        "url" : "https://intranet.justice.gov.uk/events/",
+        "state" : "noAuth",
+        "agencies" : [
+          "all"
+        ]
+      },
+      {
+        "label" : "Regions",
+        "url" : "https://intranet.justice.gov.uk/regional-pages/",
+        "state" : "noAuth",
+        "agencies" : [
+          "hmcts"
+        ]
+      },
+      {
+        "label" : "Resources",
+        "url" : "/resources-hmcts.html",
+        "state" : "noAuth",
+        "agencies" : [
+          "all"
+        ]
+      },
+      {
+        "label" : "Blogs",
+        "url" : "https://intranet.justice.gov.uk/blog/",
+        "state" : "onlyAuth",
+        "agencies" : [
+          "all"
+        ]
+      }
+    ]
+  },
   "globalHeader" : {
     "componentClass" : "c-global-header",
     "propositionTitle" : "Apply for European Structural and Investment Funding",

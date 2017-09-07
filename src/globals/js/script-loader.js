@@ -17,6 +17,7 @@ $(document).ready(function () {
 
   // Load scripts
   $('.js-clarity-toolbar').moji_clarityToolbar()
+  $('.js-article-item').moji_bigTarget('.c-article-item__content > h1 > a')
   $('.js-left-hand-menu').moji_leftHandMenu()
   $('.js-need-to-know-widget').moji_slider(true)
   $('.c-news-list > .js-article-item').moji_equaliser()

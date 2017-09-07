@@ -1,45 +1,8 @@
 {
   "meta" : {
-    "pageTitle" : "HM Courts & Tribunal Service",
+    "pageTitle" : "Home",
     "description" : "to be added",
-    "canonical" : "index.html",
-    "agency" : "HMCTS"
-  },
-  "globalNavigation" : {
-    "componentClass" : "c-global-nav",
-    "menuText" : "Menu",
-    "item" : [
-      {
-        "label" : "Home",
-        "url" : "/",
-        "state" : "noAuth"
-      },
-      {
-        "label" : "News",
-        "url" : "https://intranet.justice.gov.uk/newspage/",
-        "state" : "noAuth"
-      },
-      {
-        "label" : "Events",
-        "url" : "https://intranet.justice.gov.uk/events/",
-        "state" : "noAuth"
-      },
-      {
-        "label" : "Regions",
-        "url" : "https://intranet.justice.gov.uk/regional-pages/",
-        "state" : "noAuth"
-      },
-      {
-        "label" : "Resources",
-        "url" : "/resources-hmcts.html",
-        "state" : "noAuth"
-      },
-      {
-        "label" : "Blogs",
-        "url" : "https://intranet.justice.gov.uk/blog/",
-        "state" : "onlyAuth"
-      }
-    ]
+    "canonical" : "index.html"
   },
   "featuredNewsArticles" : [
     {
@@ -54,7 +17,10 @@
       "tags" : [ "Strategy" ],
       "excerpt" : "Richard Heaton welcomes new appointment",
       "comments" : 6,
-      "likes" : 67
+      "likes" : 67,
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "Our future judicial relationship with the EU",
@@ -66,7 +32,10 @@
       "agency" : "HQ",
       "type" : "news",
       "tags" : [ "Justice matters" ],
-      "excerpt" : ""
+      "excerpt" : "",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "Is neurointervention the future of sentencing?",
@@ -80,7 +49,10 @@
       "tags" : [ "From MoJ" ],
       "excerpt" : "",
       "comments" : 8,
-      "likes" : 17
+      "likes" : 17,
+      "agencies" : [
+        "all"
+      ]
     }
   ],
   "newsArticles" : [
@@ -93,7 +65,10 @@
       "byline" : "Shirley-Anne Mullen",
       "type" : "news",
       "tags" : [ "From MoJ" ],
-      "excerpt" : ""
+      "excerpt" : "",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "IDAHOT - My own experience",
@@ -107,7 +82,10 @@
       "tags" : [ "From MoJ" ],
       "excerpt" : "",
       "comments" : 11,
-      "likes" : 136
+      "likes" : 136,
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "Security threat level changes",
@@ -118,7 +96,10 @@
       "byline" : "Shirley-Anne Mullen",
       "type" : "news",
       "tags" : [ "Announcement" ],
-      "excerpt" : ""
+      "excerpt" : "",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "Viewing your payslip, P60 & SOP availability",
@@ -138,7 +119,10 @@
       "url" : "test1.html",
       "dateline" : "18 May 2017",
       "byline" : "Shirley-Anne Mullen",
-      "excerpt" : ""
+      "excerpt" : "",
+      "agencies" : [
+        "all"
+      ]
     }
   ],
   "events" : [
@@ -147,88 +131,132 @@
       "time" : "All day",
       "location" : "",
       "dow" : "Sunday",
-      "day" : "01",
-      "month" : "Oct",
+      "day" : "2",
+      "month" : "Dec",
       "year" : "2017",
-      "url" : "http://fakeurl.com"
+      "url" : "http://fakeurl.com",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "Black history month",
       "time" : "All day",
       "location" : "",
       "dow" : "Sunday",
-      "day" : "01",
-      "month" : "Oct",
+      "day" : "22",
+      "month" : "Nov",
       "year" : "2017",
-      "url" : "http://fakeurl.com"
+      "url" : "http://fakeurl.com",
+      "agencies" : [
+        "all"
+      ]
     }
   ],
   "agencyLinkList" : [
     {
       "title" : "MoJ TRANSFORMATION",
       "url" : "http://fakeurl.com",
-      "class" : "transform"
+      "class" : "transform",
+      "agencies" : [
+        "all"
+      ]
     }
   ],
   "appList" : [
     {
       "title" : "People finder",
       "url" : "http://fakeurl.com",
-      "class" : "people-finder"
+      "class" : "people-finder",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "Travel booking",
       "url" : "http://fakeurl.com",
-      "class" : "travel-booking"
+      "class" : "travel-booking",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "Jobs",
       "url" : "http://fakeurl.com",
-      "class" : "jobs"
+      "class" : "jobs",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "Pensions",
       "url" : "http://fakeurl.com",
-      "class" : "pension"
+      "class" : "pension",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "SOP",
       "url" : "http://fakeurl.com",
-      "class" : "sop"
+      "class" : "sop",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "Civil Service Learning",
       "url" : "http://fakeurl.com",
-      "class" : "civil-service-learning"
+      "class" : "civil-service-learning",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "IT portal",
       "url" : "http://fakeurl.com",
-      "class" : "it-portal"
+      "class" : "it-portal",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "MoJ Webchat",
       "url" : "http://fakeurl.com",
-      "class" : "webchat"
+      "class" : "webchat",
+      "agencies" : [
+        "all"
+      ]
     }
   ],
-  "myWork" : [],
   "quickLinks" : [
     {
       "title": "Buildings and facilities",
-      "url" : "http://fakeurl.com"
+      "url" : "http://fakeurl.com",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title": "Contact Shared Services",
-      "url" : "http://fakeurl.com"
+      "url" : "http://fakeurl.com",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title": "Induction",
-      "url" : "http://fakeurl.com"
+      "url" : "http://fakeurl.com",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title": "Deals on travel, food and entertainment",
-      "url" : "http://fakeurl.com"
+      "url" : "http://fakeurl.com",
+      "agencies" : [
+        "all"
+      ]
     }
   ],
   "blogArticles" : [
@@ -244,7 +272,10 @@
       "tags" : [ "From MoJ" ],
       "excerpt" : "",
       "comments" : 8,
-      "likes" : 17
+      "likes" : 17,
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "Spring clean your electronic information",
@@ -256,7 +287,10 @@
       "byImg" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/05/Amie-1-128x128.jpg",      
       "type" : "blogs",
       "tags" : [ "From MoJ" ],
-      "excerpt" : ""
+      "excerpt" : "",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "What Ramadan means to me",
@@ -270,7 +304,10 @@
       "tags" : [ "From MoJ" ],
       "excerpt" : "",
       "comments" : 24,
-      "likes" : 133
+      "likes" : 133,
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "Who wants to be more creative?",
@@ -284,7 +321,10 @@
       "tags" : [ "From MoJ" ],
       "excerpt" : "",
       "comments" : 5,
-      "likes" : 22
+      "likes" : 22,
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "A very competent profession",
@@ -296,29 +336,60 @@
       "byImg" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/05/My-Photo-People-Finder-128x128.jpg",
       "type" : "blogs",
       "tags" : [ "From MoJ" ],
-      "excerpt" : ""
+      "excerpt" : "",
+      "agencies" : [
+        "all"
+      ]
     }
   ],
   "socialLinks" : [
     {
       "title" : "HMCTS CEO on Twitter",
       "url" : "",
-      "class" : "twitter"
+      "class" : "twitter",
+      "agencies" : [
+        "hmcts"
+      ]
     },
     {
       "title" : "HMCTS on Twitter",
       "url" : "",
-      "class" : "twitter"
+      "class" : "twitter",
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "MoJ on Twitter",
+      "url" : "",
+      "class" : "twitter",
+      "agencies" : [
+        "hq"
+      ]
     },
     {
       "title" : "HMCTS on Yammer",
       "url" : "",
-      "class" : "yammer"
+      "class" : "yammer",
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "MoJ on Yammer",
+      "url" : "",
+      "class" : "yammer",
+      "agencies" : [
+        "hq"
+      ]
     },
     {
       "title" : "HMCTS on LinkedIn",
       "url" : "",
-      "class" : "linkedin"
+      "class" : "linkedin",
+      "agencies" : [
+        "hmcts"
+      ]
     }
   ]
 }

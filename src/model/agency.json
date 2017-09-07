@@ -1,0 +1,13 @@
+{
+  "agency" : [
+    {
+      "fullName" : "HM Courts & Tribunal Service",
+      "shortcode" : "hmcts",
+      "nickname" : ""
+    },
+    {
+      "fullName" : "Ministry of Justice",
+      "shortcode" : "hq",
+      "nickname" : "MoJ"
+    }
+  ]

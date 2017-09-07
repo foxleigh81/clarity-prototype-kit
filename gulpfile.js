@@ -253,6 +253,9 @@ gulp.task('processHTML', function () {
       return JSON.parse(fs.readFileSync('src/model/' + path.basename(file.path, '.njk') + '.json'))
     }))
     .pipe(data(function () {
+      return JSON.parse(fs.readFileSync('src/model/agency.json'))
+    }))
+    .pipe(data(function () {
       return JSON.parse(fs.readFileSync('src/model/globals.json'))
     }))
     .pipe(nunjucks({
