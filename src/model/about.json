@@ -1,0 +1,49 @@
+{
+  "meta" : {
+    "pageTitle" : "HM Courts & Tribunal Service",
+    "description" : "to be added",
+    "canonical" : "index.html",
+    "agency" : "HMCTS"
+  },
+  "globalNavigation" : {
+    "componentClass" : "c-global-nav",
+    "menuText" : "Menu",
+    "item" : [
+      {
+        "label" : "Home",
+        "url" : "/",
+        "state" : "noAuth"
+      },
+      {
+        "label" : "About",
+        "url" : "/about.html",
+        "state" : "noAuth"
+      },
+      {
+        "label" : "News",
+        "url" : "https://intranet.justice.gov.uk/newspage/",
+        "state" : "noAuth"
+      },
+      {
+        "label" : "Events",
+        "url" : "https://intranet.justice.gov.uk/events/",
+        "state" : "noAuth"
+      },
+      {
+        "label" : "Regions",
+        "url" : "https://intranet.justice.gov.uk/regional-pages/",
+        "state" : "noAuth"
+      },
+      {
+        "label" : "Resources",
+        "url" : "/resources-hmcts.html",
+        "state" : "noAuth"
+      },
+      {
+        "label" : "Blogs",
+        "url" : "https://intranet.justice.gov.uk/blog/",
+        "state" : "onlyAuth"
+      }
+    ]
+  }
+}

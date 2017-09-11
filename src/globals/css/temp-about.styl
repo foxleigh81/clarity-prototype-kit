@@ -1,0 +1,36 @@
+// This file is temporary and should never leave prototype 5
+
+@require '_toolkit';
+
+.temp-about {
+  
+  
+  ul ul {
+    margin-left: $spacing*1;
+    margin-top: $spacing*1;
+    li {
+      margin-bottom $spacing*.5;
+    }
+  }
+
+  article {
+    clearfix();
+    margin-bottom $spacing*3
+    a {
+      &:hover {
+          text-decoration underline
+        }
+    }
+    div > ul > li {
+      background: $light;
+      padding: $spacing;
+      > a {
+        display block
+        font-weight bold
+      }
+      column(1/3, $cycle: 3);
+      margin-bottom $spacing*2;
+    }
+  }
+
+}
