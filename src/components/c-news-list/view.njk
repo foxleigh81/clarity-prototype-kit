@@ -1,7 +1,9 @@
 <div class="c-news-list">
   {% for article in newsArticles %}
-    {% set context = article %}
-    {% include '../c-article-item/view.njk' %}
+    {% if(article.agencies == "all") or (article.agencies.indexOf(agency.shortcode) != -1) %}
+      {% set context = article %}
+      {% include '../c-article-item/view.njk' %}
+    {% endif %}
   {% endfor %}
 </div>
 

@@ -2,25 +2,14 @@
   <div class="u-wrapper">
     <ul>
       {# Loop through navigation and show the links #}
-      {% for item in globalNavigation.item %}
-        <li><a href="{{item.url}}?agency={{meta.agency | lower}}">{{item.label}}</a></li>
+      {% for item in navigation.item %}
+        {% if(item.agencies == "all") or (item.agencies == agency.shortcode) %}
+          <li><a href="{{item.url}}?agency={{agency.shortcode | lower}}">{{item.label}}</a></li>
+        {% endif %}
       {% endfor %}
-      <li><a href="">Change intranet</a>
-        <nav>
-          <span>Switch to another intranet</span>
-          <ul>
-            <li><a href="/cica.html">Criminal Injuries Compensation Authority</a></li>
-            <li><a href="/index.html">HM Courts &amp; Tribunals Service</a></li>
-            <li><a href="/hmpps.html">HM Prison &amp; Probation Service</a></li>
-            <li><a href="/jac.html">Judicial Appointments Commission</a></li>
-            <li><a href="/lc.html">Law Commission</a></li>
-            <li><a href="/laa.html">Legal Aid Agency</a></li>
-            <li><a href="/hq.html">Ministry of Justice HQ</a></li>
-            <li><a href="/opg.html">Office of the Public Guardian</a></li>
-            <li><a href="/ospt.html">Official Solicitor and Public Trustee</a></li>
-            <li><a href="/pb.html">The Parole Board</a></li>
-          </ul>
-        </nav>
+      <li>
+        <a href="">Change intranet</a>
+        {% include "../c-intranet-switcher/view.njk" %}
       </li>
     </ul>
   </div>

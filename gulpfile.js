@@ -237,6 +237,7 @@ gulp.task('testModel', function () {
 })
 
 // Move robots.txt to site root
+// Remember that this is a prototype tool and so the robots.txt file is there to disallow ALL search engine crawling
 gulp.task('robots', function () {
   'use strict'
   return gulp.src('robots.txt')

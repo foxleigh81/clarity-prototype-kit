@@ -19,7 +19,8 @@
       "comments" : 6,
       "likes" : 67,
       "agencies" : [
-        "all"
+        "hq",
+        "hmcts"
       ]
     },
     {
@@ -110,7 +111,10 @@
       "byline" : "Shirley-Anne Mullen",
       "type" : "news",
       "tags" : [ "HMCTS" ],
-      "excerpt" : ""
+      "excerpt" : "",
+      "agencies" : [
+        "all"
+      ]
     },
     {
       "title" : "Delivering the future",

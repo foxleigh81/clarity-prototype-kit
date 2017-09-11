@@ -1,7 +1,9 @@
 <div class="c-events-list">
   {% for event in events %}
-    {% set context = event %}
-    {% include '../c-events-item/view.njk' %}
+    {% if(event.agencies == "all") or (event.agencies.indexOf(agency.shortcode) != -1) %}
+      {% set context = event %}
+      {% include '../c-events-item/view.njk' %}
+    {% endif %}
   {% endfor %}
 </div>
 
