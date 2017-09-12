@@ -60,15 +60,7 @@
       "url" : ""
     },
     {
-      "title" : "Civil Service Learning",
-      "url" : ""
-    },
-    {
-      "title" : "IT portal",
-      "url" : ""
-    },
-    {
-      "title" : "It portal",
+      "title" : "IT Portal",
       "url" : ""
     },
     {
@@ -76,7 +68,15 @@
       "url" : ""
     },
     {
-      "title" : "Jobs",
+      "title" : "People Finder",
+      "url" : ""
+    },
+    {
+      "title" : "Room Booking",
+      "url" : ""
+    },
+    {
+      "title" : "Travel Booking",
       "url" : ""
     }
   ],
