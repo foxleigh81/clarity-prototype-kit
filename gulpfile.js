@@ -83,6 +83,16 @@ var onError = function (err) {
   this.emit('end')
 }
 
+var Renamer = function () {
+  function folderToFilename (fileInfo) {
+    var baseName = path.basename(fileInfo.dirname)
+    fileInfo.basename = baseName
+    fileInfo.dirname = path.dirname(fileInfo.dirname)
+  }
+
+  this.folderToFilename = folderToFilename
+}
+
 // Combine styles
 /* styles task */
 gulp.task('stylus', function () {
@@ -169,6 +179,8 @@ gulp.task('vendors', function () {
   // Move jQuery, ie.js and any files in src/vendors
   return gulp.src([
     'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/nunjucks/browser/nunjucks.min.js',
+    'node_modules/js-cookie/src/js.cookie.js',
     'node_modules/ie8-js/js/build/ie8-js-html5shiv.js',
     'src/vendors/**/*'
   ])
@@ -186,16 +198,27 @@ gulp.task('static', function (done) {
   done()
 })
 
-// Move json
+// Move Views
+gulp.task('views', function () {
+  'use strict'
+  var renamer = new Renamer();
+  return gulp.src([
+    'src/components/**/*.njk'
+  ])
+  .pipe(rename(renamer.folderToFilename))
+  .pipe(plumber({ errorHandler: onError }))
+  .pipe(extReplace('.html'))
+  .pipe(gulp.dest('dist/views'))
+})
+
+// Move JSON Model
 gulp.task('model', function () {
   'use strict'
   return gulp.src([
     'src/model/**/*'
   ])
-    .pipe(plumber(
-      { errorHandler: onError }
-    ))
-    .pipe(gulp.dest('dist/model'))
+  .pipe(plumber({ errorHandler: onError }))
+  .pipe(gulp.dest('dist/model'))
 })
 
 /* Scripts task */

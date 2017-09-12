@@ -4,9 +4,9 @@
     "siteName" : "Clarity rebuild prototype"
   },
   "agency" : {
-      "fullName" : "Ministry of Justice HQ",
-      "shortcode" : "hq",
-      "knownAs" : "MoJ"
+    "fullName" : "Ministry of Justice HQ",
+    "shortcode" : "hq",
+    "knownAs" : "MoJ"
   },
   "navigation" : {
     "componentClass" : "c-global-nav",

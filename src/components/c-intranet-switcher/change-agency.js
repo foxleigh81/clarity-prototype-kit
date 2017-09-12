@@ -16,6 +16,12 @@
       e.preventDefault()
       var changeAgency = $(this).parent().data('agency')
       $('body').removeClass('agency-' + currentAgency).addClass('agency-' + changeAgency).attr('data-agency', changeAgency)
+      currentAgency = changeAgency
+      // Get data for current page and attach to global variable
+      $.getJSON('model/' + currentPage + '.json', function (data) {
+        window.pageData = data
+      })
+      $('body').moji_rewriter(changeAgency)
     })
     return container
   }

@@ -57,6 +57,7 @@
     "imagemin-pngquant": "latest",
     "jeet": "^7.1.0",
     "jquery": "^3.2.1",
+    "js-cookie": "^2.1.4",
     "node-notifier": "^4.5.0",
     "nunjucks": "^3.0.1",
     "rename": "^1.0.4",
