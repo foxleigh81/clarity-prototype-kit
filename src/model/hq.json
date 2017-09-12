@@ -15,11 +15,6 @@
         "state" : "noAuth"
       },
       {
-        "label" : "About",
-        "url" : "/about.html",
-        "state" : "noAuth"
-      },
-      {
         "label" : "News",
         "url" : "https://intranet.justice.gov.uk/newspage/",
         "state" : "noAuth"
