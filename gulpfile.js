@@ -267,8 +267,8 @@ gulp.task('processHTML', function () {
     .pipe(reload({stream: true}))
 })
 
-var prodBuild = ['clean', 'styles', 'vendors', 'static', 'scripts', 'images', 'processHTML', 'robots', 'notify']
-var devBuild = ['clean', 'styles', 'vendors', 'static', 'scripts', 'images', 'processHTML', 'notify']
+var prodBuild = ['clean', 'styles', 'vendors', 'static', 'testModel', 'model', 'scripts', 'images', 'processHTML', 'robots', 'notify']
+var devBuild = ['clean', 'styles', 'vendors', 'static', 'testModel', 'model', 'scripts', 'images', 'processHTML', 'notify']
 var buildTasks = argv.prod ? prodBuild : devBuild
 
 // Perform Basic Build (note, don't call directly, use build:dev or build)

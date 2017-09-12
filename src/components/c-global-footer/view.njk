@@ -9,18 +9,5 @@
   </div>
 </footer>
 <script src="static/js/core.min.js" charset="utf-8"></script>
-{# As this prototype doesn't have a database of it's own, we need to add some JSON data here to allow interactivity #}
-<script>
-  var agencies = [
-    {% for agency in agencies %}
-      {
-        "fullName" : "{{ agency.fullName }}",
-        "shortcode" : "{{ agency.shortcode }}",
-        "knownAs" : " {{ agency.knownAs }}",
-        "current" : {{ agency.current }}
-      }{% if not loop.last %},{% endif %}
-    {% endfor %}
-  ]
-</script>
 </body>
 </html>

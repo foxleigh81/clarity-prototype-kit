@@ -1,4 +1,4 @@
-/* global jQuery agencies */
+/* global jQuery location */
 
 ;(function ($) {
   /**
@@ -10,7 +10,13 @@
   */
   $.fn.moji_changeAgency = function () {
     var container = this
-    
+    var currentPage = (location.pathname.substring(1)) ? location.pathname.substring(1).replace('.html', '') : 'index'
+    var currentAgency = $('body').data('agency')
+    container.find('li > a').on('click', function (e) {
+      e.preventDefault()
+      var changeAgency = $(this).parent().data('agency')
+      $('body').removeClass('agency-' + currentAgency).addClass('agency-' + changeAgency).attr('data-agency', changeAgency)
+    })
     return container
   }
 })(jQuery)
