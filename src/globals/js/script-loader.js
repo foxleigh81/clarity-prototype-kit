@@ -14,7 +14,7 @@ You can attach a script to any element but please put a js- class for any hooks 
 $(document).ready(function () {
   // Tell the css that JavaScript has loaded successfully
   $('html').removeClass('no-js').addClass('js')
-
+  $('.js-intranet-switcher').moji_changeAgency()
   // Load scripts
   $('.js-clarity-toolbar').moji_clarityToolbar()
   $('.js-article-item').moji_bigTarget('.c-article-item__content > h1 > a')

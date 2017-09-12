@@ -1,4 +1,4 @@
-/* global jQuery */
+/* global jQuery agencies */
 
 ;(function ($) {
   /**
@@ -8,9 +8,9 @@
   * Make sure you reference the container and child elements. e.g. $('.c-news-list > .js-article-item').moji_equaliser()
   *
   */
-   $.fn.moji_changeAgency = function () {
-     var container = this
+  $.fn.moji_changeAgency = function () {
+    var container = this
     
-     return container
-   }
- })(jQuery)
+    return container
+  }
+})(jQuery)

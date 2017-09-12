@@ -16,7 +16,8 @@
       {
         "fullName" : "{{ agency.fullName }}",
         "shortcode" : "{{ agency.shortcode }}",
-        "knownAs" : " {{ agency.knownAs }}"
+        "knownAs" : " {{ agency.knownAs }}",
+        "current" : {{ agency.current }}
       }{% if not loop.last %},{% endif %}
     {% endfor %}
   ]

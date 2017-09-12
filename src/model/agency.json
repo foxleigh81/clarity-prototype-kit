@@ -3,52 +3,62 @@
     {
       "fullName" : "Ministry of Justice HQ",
       "shortcode" : "hq",
-      "knownAs" : "MoJ"
+      "knownAs" : "MoJ",
+      "current" : true
     },
     {
       "fullName" : "HM Courts &amp; Tribunal Service",
       "shortcode" : "hmcts",
-      "knownAs" : "HMCTS"
+      "knownAs" : "HMCTS",
+      "current" : false
     },
     {
       "fullName" : "Criminal Injuries Compensation Authority",
       "shortcode" : "cica",
-      "knownAs" : "CICA"
+      "knownAs" : "CICA",
+      "current" : false
     },
     {
       "fullName" : "HM Prison &amp; Probation Service",
       "shortcode" : "hmpps",
-      "knownAs" : "HMPPS"
+      "knownAs" : "HMPPS",
+      "current" : false
     },
     {
       "fullName" : "Judicial Appointments Commission",
       "shortcode" : "jac",
-      "knownAs" : "JAC"
+      "knownAs" : "JAC",
+      "current" : false
     },
     {
       "fullName" : "Law Commission",
       "shortcode" : "lc",
-      "knownAs" : "Law Commission"
+      "knownAs" : "Law Commission",
+      "current" : false
     },
     {
       "fullName" : "Legal Aid Agency",
       "shortcode" : "laa",
-      "knownAs" : "LAA"
+      "knownAs" : "LAA",
+      "current" : false
     },
     {
       "fullName" : "Office of the Public Guardian",
       "shortcode" : "opg",
-      "knownAs" : "OPG"
+      "knownAs" : "OPG",
+      "current" : false
     },
     {
       "fullName" : "Official Solicitor and Public Trustee",
       "shortcode" : "ospt",
-      "knownAs" : "OSPT"
+      "knownAs" : "OSPT",
+      "current" : false
     },
     {
       "fullName" : "The Parole Board",
       "shortcode" : "tpb",
-      "knownAs" : "The Parole Board"
+      "knownAs" : "The Parole Board",
+      "current" : false
     }
   ]
 }
