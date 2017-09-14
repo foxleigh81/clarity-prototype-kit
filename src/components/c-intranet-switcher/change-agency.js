@@ -1,4 +1,4 @@
-/* global jQuery location */
+/* global jQuery location Cookies */
 
 ;(function ($) {
   /**
@@ -11,12 +11,19 @@
   $.fn.moji_changeAgency = function () {
     var container = this
     var currentPage = (location.pathname.substring(1)) ? location.pathname.substring(1).replace('.html', '') : 'index'
-    var currentAgency = $('body').data('agency')
+    // HQ is the default unless there is a cookie specifying otherwise
+    var currentAgency = (Cookies.get('agency')) ? Cookies.getJSON('agency').shortcode : 'hq'
+    $('body').removeClass(function (index, className) {
+      return (className.match(/(^|\s)agency-\S+/g) || []).join(' ')
+    }).addClass('agency-' + currentAgency)
+    
     container.find('li > a').on('click', function (e) {
       e.preventDefault()
       var changeAgency = $(this).parent().data('agency')
-      $('body').removeClass('agency-' + currentAgency).addClass('agency-' + changeAgency).attr('data-agency', changeAgency)
-      currentAgency = changeAgency
+      $('body').removeClass(function (index, className) {
+        return (className.match(/(^|\s)agency-\S+/g) || []).join(' ')
+      }).addClass('agency-' + changeAgency)
+      
       // Get data for current page and attach to global variable
       $.getJSON('model/' + currentPage + '.json', function (data) {
         window.pageData = data

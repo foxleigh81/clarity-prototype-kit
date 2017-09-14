@@ -46,7 +46,7 @@
       },
       {
         "label" : "Resources",
-        "url" : "/resources-hmcts.html",
+        "url" : "/resources.html",
         "state" : "noAuth",
         "agencies" : [
           "all"
