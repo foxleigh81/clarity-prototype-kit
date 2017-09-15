@@ -25,6 +25,47 @@
       "agencies" : [
         "all"
       ]
+    },{
+      "title" : "Crown Court",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "Enforcement",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "Family",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "Legal Services",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "Magistrates - pre-bail charge",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "Tribunal",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
+      ]
     },
     {
       "title" : "About MoJ",
@@ -39,21 +80,7 @@
       "title" : "Civil Service Learning",
       "url" : "",
       "agencies" : [
-        "hmcts"
-      ]
-    },
-    {
-      "title" : "Civil Service Learning",
-      "url" : "",
-      "agencies" : [
         "all"
-      ]
-    },
-    {
-      "title" : "IT portal",
-      "url" : "",
-      "agencies" : [
-        "hmcts"
       ]
     },
     {
@@ -67,14 +94,28 @@
       "title" : "Jobs",
       "url" : "",
       "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Form finder",
+      "url" : "",
+      "agencies" : [
         "hmcts"
       ]
     },
     {
-      "title" : "Jobs",
+      "title" : "SOP",
       "url" : "",
       "agencies" : [
-        "all"
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "Travel booking",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
       ]
     }
   ],

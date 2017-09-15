@@ -1,0 +1,8 @@
+<div class="c-about-list">
+{% for item in descriptionList %}
+  {% if(item.agencies == "all") or (item.agencies.indexOf(agency.shortcode) != -1) %}
+    {% set context = item %}
+    {% include '../c-three-col-list-with-desc/view.njk' %}
+  {% endif %}
+{% endfor %}
+</div>

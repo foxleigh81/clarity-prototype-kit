@@ -5,7 +5,7 @@
   $.fn.moji_rewriter = function (agency) {
     agency = (!agency) ? Cookies.getJSON('agency').shortcode : agency
     // As this is not to be used in production it makes sense to register the components here instead of looking for a class.
-    var componentList = ['c-logo-bar', 'c-main-nav-bar', 'c-social-links', 'c-news-widget', 'c-blog-feed', 'c-my-work', 'c-quick-links', 'c-common-resources', 'c-further-resources']
+    var componentList = ['c-logo-bar', 'c-main-nav-bar', 'c-social-links', 'c-news-widget', 'c-blog-feed', 'c-my-work', 'c-quick-links', 'c-common-resources', 'c-further-resources', 'c-about-list']
 
     var rewrite = function (newData) {
       var env = new nunjucks.Environment(new nunjucks.WebLoader('/views'))
