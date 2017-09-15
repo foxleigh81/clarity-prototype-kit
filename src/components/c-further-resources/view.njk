@@ -2,7 +2,9 @@
   <h1 class="o-title o-title--section">Further resources</h1>
   <ul>
     {% for item in furtherResources %}
-      <li><a href="{{item.url}}">{{item.title}}</a></li>
+        {% if(item.agencies == "all") or (item.agencies == agency.shortcode) %}
+          <li><a href="{{item.url}}">{{item.title}}</a></li>
+        {% endif %}
     {% endfor %}
   </ul>
 </section>

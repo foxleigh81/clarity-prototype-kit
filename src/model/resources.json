@@ -9,21 +9,28 @@
       "title" : "Buildings and facilities",
       "url" : "",
       "agencies" : [
-        "hmcts"
+        "all"
       ]
     },
     {
       "title" : "Contact shared services",
       "url" : "",
       "agencies" : [
-        "hmcts"
+        "all"
       ]
     },
     {
       "title" : "Induction",
       "url" : "",
       "agencies" : [
-        "hmcts"
+        "all"
+      ]
+    },
+    {
+      "title" : "About MoJ",
+      "url" : "about.html",
+      "agencies" : [
+        "hq"
       ]
     }
   ],
@@ -246,6 +253,13 @@
       "url" : "",
       "agencies" : [
         "all"
+      ]
+    },
+    {
+      "title" : "About HMCTS",
+      "url" : "about.html",
+      "agencies" : [
+        "hmcts"
       ]
     }
   ]
