@@ -14,6 +14,11 @@
         window.globalData.agency = Cookies.get('agency')
       }
     })
+    var currentPage = (document.location.pathname !== '/') ? document.location.pathname.match(/[^/]+$/)[0].replace('.html', '') : 'index'
+    // Get the current page data and attach that to a global variable too
+    $.getJSON('model/' + currentPage + '.json', function (data) {
+      window.pageData = data
+    })
     return this
   }
 })(jQuery)

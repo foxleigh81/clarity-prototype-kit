@@ -24,6 +24,7 @@ var nunjucks = require('gulp-nunjucks-html')
 var path = require('path')
 var rename = require('gulp-rename')
 var data = require('gulp-data')
+var replace = require('gulp-string-replace')
 var reload = browserSync.reload
 
 // watch files for changes and reload
@@ -205,6 +206,10 @@ gulp.task('views', function () {
   return gulp.src([
     'src/components/**/*.njk'
   ])
+  .pipe(replace("{% include '../", "{% include '"))
+  .pipe(replace("/view.njk' %}", ".html' %}"))
+  .pipe(replace('{% include "../', '{% include "'))
+  .pipe(replace('/view.njk" %}', '.html" %}'))
   .pipe(rename(renamer.folderToFilename))
   .pipe(plumber({ errorHandler: onError }))
   .pipe(extReplace('.html'))
