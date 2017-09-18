@@ -60,7 +60,7 @@ gulp.task('serve', function () {
   gulp.watch('src/images', ['images'], reload)
 
   // Compile HTML and JSON
-  gulp.watch(['src/components/**/*.njk', 'src/templates/**/*.njk', 'src/pages/**/*.njk', 'src/model/**/*.json'], ['processHTML'], reload)
+  gulp.watch(['src/components/**/*.njk', 'src/templates/**/*.njk', 'src/pages/**/*.njk', 'src/model/**/*.json'], ['processHTML', 'model', 'views'], reload)
 
   // Show success message
   console.log(chalk.green('✔ Server started!'))
@@ -217,7 +217,7 @@ gulp.task('views', function () {
 })
 
 // Move JSON Model
-gulp.task('model', function () {
+gulp.task('model', ['testModel'], function () {
   'use strict'
   return gulp.src([
     'src/model/**/*'
@@ -295,8 +295,8 @@ gulp.task('processHTML', function () {
     .pipe(reload({stream: true}))
 })
 
-var prodBuild = ['clean', 'styles', 'vendors', 'static', 'testModel', 'model', 'views', 'scripts', 'images', 'processHTML', 'robots', 'notify']
-var devBuild = ['clean', 'styles', 'vendors', 'static', 'testModel', 'model', 'views', 'scripts', 'images', 'processHTML', 'notify']
+var prodBuild = ['clean', 'styles', 'vendors', 'static', 'model', 'views', 'scripts', 'images', 'processHTML', 'robots', 'notify']
+var devBuild = ['clean', 'styles', 'vendors', 'static', 'model', 'views', 'scripts', 'images', 'processHTML', 'notify']
 var buildTasks = argv.prod ? prodBuild : devBuild
 
 // Perform Basic Build (note, don't call directly, use build:dev or build)

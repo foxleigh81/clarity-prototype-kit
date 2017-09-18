@@ -395,5 +395,29 @@
         "hmcts"
       ]
     }
-  ]
+  ],
+  "poll" : {
+    "questionTitle" : "What is your favourite colour?",
+    "questionDesc" : "Everyone has a favourite colour, what is yours?",
+    "multiSelect" : false,
+    "answers" : [
+      {
+        "title" : "Red",
+        "value" : "red",
+        "count" : 0
+      },
+      {
+        "title" : "Green",
+        "value" : "green",
+        "count" : 0
+      },
+      {
+        "title" : "Blue",
+        "value" : "blue",
+        "count" : 0
+      }
+    ],
+    "voteCount" : 0,
+    "daysLeft" : 11
+  }
 }

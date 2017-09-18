@@ -5,10 +5,10 @@
     "name" : "Alex Foxleigh",
     "github_username" : "foxleigh81"
   },
-  "description" : "The My MoJ section, contains the agency and app links",
+  "description" : "The new polls module",
   "standard_or_universal" : "standard",
   "parents" : "",
-  "children" : "c-agency-link-list, c-app-list",
+  "children" : "",
   "notes" : {
     "backend" : "",
     "frontend" : ""
