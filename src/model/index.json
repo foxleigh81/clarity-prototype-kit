@@ -397,6 +397,7 @@
     }
   ],
   "poll" : {
+    "name" : "favourite-colour",
     "questionTitle" : "What is your favourite colour?",
     "questionDesc" : "Everyone has a favourite colour, what is yours?",
     "multiSelect" : false,
@@ -404,20 +405,20 @@
       {
         "title" : "Red",
         "value" : "red",
-        "count" : 0
+        "count" : 11
       },
       {
         "title" : "Green",
         "value" : "green",
-        "count" : 0
+        "count" : 2
       },
       {
         "title" : "Blue",
         "value" : "blue",
-        "count" : 0
+        "count" : 8
       }
     ],
-    "voteCount" : 0,
+    "voteCount" : 21,
     "daysLeft" : 11
   }
 }

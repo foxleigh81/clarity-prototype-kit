@@ -1,15 +1,15 @@
-<section class="c-polls">
+<section class="c-polls js-polls">
   <h1 class="o-title o-title--section">Poll</h1>
   <header class="c-polls__top">
     <h2 class="o-title o-title--subtitle">{{ poll.questionTitle }}</h2>
     <p>{{ poll.questionDesc }}</p>
   </header>
-  <form action="">
+  <form action="post" id="poll-{{poll.name}}">
   {% for answer in poll.answers %}  
-      <label><input type="{% if poll.multiSelect == true %}checkbox{% else %}radio{% endif %}" name="answers" id="" value="{{ answer.value }}" />{{ answer.title }}</label>
+      <label><input type="{% if poll.multiSelect == true %}checkbox{% else %}radio{% endif %}" name="answers" id="answers_{{answer.value}}" value="{{ answer.value }}" />{{ answer.title }}</label>
   {% endfor %}
     <p>Poll will close in {{ poll.daysLeft }} days. <strong>{{ poll.voteCount }} votes so far</strong></p>
-    <div class="c-polls__buttons">
+    <div class="c-polls__buttons js-poll-buttons">
       <button class="o-button">Submit</button>
       <button class="o-text-button">View results</button>
     </div>

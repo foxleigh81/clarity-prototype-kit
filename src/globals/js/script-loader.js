@@ -27,4 +27,5 @@ $(document).ready(function () {
   $('.l-page-top > section').moji_equaliser()
   // This script is attached to a template and not a component
   $('.js-tabbed-content-container').moji_tabbedContent()
+  $('.js-polls').moji_polls()
 })
