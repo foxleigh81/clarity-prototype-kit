@@ -2,6 +2,8 @@
 // include the toolkit (a suite of variables, classes and mixins)
 @require "../../globals/css/_toolkit"
 
+//TODO: The styles here are not 100% robust. There is no responsive consideration and also I have not tested longer text for questions.
+
 .c-polls {
   margin-bottom $spacing*3
   &__top {
@@ -43,11 +45,56 @@
       font-size: $crust;
     }
   }
-  label {
-    display: block;
-    padding: $spacing;
+  li {
+    position relative
     margin-bottom $spacing
     background: $light
+  }
+  &__answer {
+    display inline-block
+    height: 100%
+    &.active {
+      border: inset 3px solid $light
+      display block
+    }
+    
+  }
+  &__answer-text {
+    font-weight bold
+    .active & {
+      display block
+      padding: $spacing
+      z-index: 10
+      line-height: 1.5
+    }
+    .selected & {
+      &:before {
+        content: "> "
+      }
+    }
+  }
+
+  &__answer-bar {
+    position: absolute
+    left: 0
+    top:0
+    z-index: 0
+    height: 100%;
+    width: 0%;
+    overflow: hidden;
+    background-color: rgba($primary, .4);
+    transition: width 1s ease-in-out
+    opacity: 0
+    .active & {
+      opacity: 1
+    }
+  }
+
+  label {
+    display: block;
+    z-index: 10
+    position relative
+    padding: $spacing;
     &:focus,
     &:hover {
       cursor: pointer;

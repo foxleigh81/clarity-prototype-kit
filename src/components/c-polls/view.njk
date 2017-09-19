@@ -5,10 +5,12 @@
     <p>{{ poll.questionDesc }}</p>
   </header>
   <form action="post" id="poll-{{poll.name}}">
-  {% for answer in poll.answers %}  
-      <label><input type="{% if poll.multiSelect == true %}checkbox{% else %}radio{% endif %}" name="answers" id="answers_{{answer.value}}" value="{{ answer.value }}" />{{ answer.title }}</label>
-  {% endfor %}
-    <p>Poll will close in {{ poll.daysLeft }} days. <strong>{{ poll.voteCount }} votes so far</strong></p>
+    <ul>
+    {% for answer in poll.answers %}  
+        <li data-count="{{ answer.count }}"><label><input type="{% if poll.multiSelect == true %}checkbox{% else %}radio{% endif %}" name="answers" id="answers_{{answer.value}}" value="{{ answer.value }}" /><div class="c-polls__answer"><span class="c-polls__answer-text">{{ answer.title }}</span></div></label><span class="c-polls__answer-bar"></span></li>
+    {% endfor %}
+    </ul>
+    <p>Poll will close in {{ poll.daysLeft }} days. <strong><span class="js-poll-count">{{ poll.voteCount }}</span> votes so far</strong></p>
     <div class="c-polls__buttons js-poll-buttons">
       <button class="o-button">Submit</button>
       <button class="o-text-button">View results</button>

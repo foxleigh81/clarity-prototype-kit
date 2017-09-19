@@ -410,15 +410,15 @@
       {
         "title" : "Green",
         "value" : "green",
-        "count" : 2
+        "count" : 22
       },
       {
         "title" : "Blue",
         "value" : "blue",
-        "count" : 8
+        "count" : 85
       }
     ],
-    "voteCount" : 21,
+    "voteCount" : 118,
     "daysLeft" : 11
   }
 }
