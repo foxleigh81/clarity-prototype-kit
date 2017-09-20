@@ -35,7 +35,7 @@ gulp.task('serve', function () {
       baseDir: './dist'
     },
       // Change the default port
-    port: 3000,
+    port: 3300,
       // All open instances of the site will reload if the server is restarted
     reloadOnRestart: true,
       // // Don't show any notifications in the browser.

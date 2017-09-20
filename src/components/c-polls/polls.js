@@ -1,4 +1,4 @@
-/* global jQuery Cookies */
+/* global jQuery */
 
 ;(function ($) {
   /**
