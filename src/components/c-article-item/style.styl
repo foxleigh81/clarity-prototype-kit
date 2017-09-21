@@ -9,7 +9,7 @@
     overflow hidden
     border-bottom: 0;
     background: $light;
-    margin-bottom: $spacing*2;
+    margin-bottom: $spacing;
     display: table;
 
     h1 {
@@ -128,7 +128,7 @@
       }
       &:nth-child(2),
       &:nth-child(3) {
-        column(1/2)
+        column(1/2, $gutter: $spacing*2)
         > img, 
         .c-article-item__content {
           stack();
@@ -137,6 +137,9 @@
         >img {
           height: 236px; // Height locked for demo
         }
+      }
+      &__dateline {
+        display none
       }
     }
   }
@@ -151,7 +154,7 @@
     }
 
     +above('s') {
-      column(1/2, $cycle: 2);
+      column(1/2, $cycle: 2, $gutter: $spacing*2);
     }
 
     &__content {
