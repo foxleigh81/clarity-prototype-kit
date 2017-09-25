@@ -7,7 +7,7 @@
   <ul>
     	{% for link in myWork %}
         {% if(link.agencies == "all") or (link.agencies == agency.shortcode) %}
-    		  <li><a href="{{ link.url }}"> {{ link.title }}</a></li>
+    		  <li><a {% if(link.external) %} rel="external" class="u-rel-external" {% endif %} href="{{ link.url }}"> {{ link.title }}</a></li>
         {% endif %}
       {% endfor %}
   </ul>

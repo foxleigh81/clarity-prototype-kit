@@ -8,6 +8,7 @@
     {
       "title" : "Buildings and facilities",
       "url" : "",
+      "external" : true,
       "agencies" : [
         "all"
       ]
@@ -28,6 +29,7 @@
     },{
       "title" : "Crown Court",
       "url" : "",
+      "external" : true,
       "agencies" : [
         "hmcts"
       ]
@@ -56,6 +58,7 @@
     {
       "title" : "Magistrates - pre-bail charge",
       "url" : "",
+      "external" : true,
       "agencies" : [
         "hmcts"
       ]
