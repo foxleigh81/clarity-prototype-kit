@@ -14,12 +14,18 @@ You can attach a script to any element but please put a js- class for any hooks 
 $(document).ready(function () {
   // Tell the css that JavaScript has loaded successfully
   $('html').removeClass('no-js').addClass('js')
-
+  // When the page loads, check to see which agency is active and then load any appropriate data
+  $('html').moji_dataLoader().moji_rewriter()
+  $('.js-header-container').moji_changeAgency()
   // Load scripts
   $('.js-clarity-toolbar').moji_clarityToolbar()
+  $('.js-article-item').moji_bigTarget('.c-article-item__content > h1 > a')
   $('.js-left-hand-menu').moji_leftHandMenu()
   $('.js-need-to-know-widget').moji_slider(true)
   $('.c-news-list > .js-article-item').moji_equaliser()
+  $('.js-common-resources li').moji_equaliser()
+  $('.l-page-top > section').moji_equaliser()
   // This script is attached to a template and not a component
   $('.js-tabbed-content-container').moji_tabbedContent()
+  $('.js-polls').moji_polls()
 })

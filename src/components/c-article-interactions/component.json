@@ -1,0 +1,26 @@
+{
+  "name" : "Article Interactions",
+  "class" : "c-article-interactions",
+  "version" : "1.0.0",
+  "creator" : {
+    "name" : "Alex Foxleigh",
+    "github_username" : "foxleigh81"
+  },
+  "description" : "The Interactions component for articles - displays likes and comments",
+  "standard_or_universal" : "standard",
+  "parents" : "",
+  "children" : "",
+  "notes" : {
+    "backend" : "",
+    "frontend" : ""
+  },
+  "backend_classes" : {},
+  "creation_ticket" : "",
+  "changelog" : [
+    {
+      "date" : "5/9/2017",
+      "author" : "Alex Foxleigh",
+      "description" : "Created component"
+    }
+  ]
+}

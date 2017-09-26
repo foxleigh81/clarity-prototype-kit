@@ -2,27 +2,108 @@
 @require "../../globals/css/_toolkit"
 
 .c-main-nav-bar {
-  background-color: $boxBg;
-  border-bottom: 1px solid $border;
-
+  margin-bottom $spacing*2
   ul {
+    border-top  1px solid lighten($border, 60%)
+    border-bottom  1px solid lighten($border, 60%)
     display: table;
     width: 100%;
   }
 
   li {
-    border-bottom: 1px solid $border;
-    &:last-of-type {
-      border-bottom: 0;
-    }
-
+    position relative
     +above(m) {
       border-bottom: 0;
       display: table-cell;
       margin-bottom: -1px;
-      border-left: 1px solid $border;
+      border-right: 1px solid rgba($dark, 5%)
+      
       &:last-of-type {
-        border-right: 1px solid $border;
+        border-right: 0
+        a:after {
+          padding-left $spacing
+          use-icon("\f078")
+        }
+      }
+
+      nav {
+        display block
+        width: 400px;
+        overflow hidden
+        max-height 0;
+        position: absolute;
+        right:0;
+        z-index 999
+        background-color $light
+        transition .3s max-height ease-in-out
+        
+        span {
+           .agency-hq &,
+          .agency-hmpps &,
+          .agency-jac &,
+          .agency-ospt &,
+          .agency-lc &,
+          .agency-cica & {
+            background-color rgba($primary, 30%)
+          }
+          .agency-hmcts & {
+            background-color rgba($hmcts_primary, 30%)
+          }
+          .agency-laa & {
+            background-color rgba($laa_primary, 30%)
+          }
+          .agency-pb & {
+            background-color rgba($pb_primary, 30%)
+          }
+          .agency-opg & {
+            background-color rgba($opg_primary, 30%)
+          }
+          display block
+          padding: $spacing;
+          font-weight bold
+        }
+
+        li {
+          display block 
+          a {
+            text-align left
+            padding-left: $spacing*2
+            &:after {
+              display none
+            }
+            &:hover {
+                .agency-hq &,
+                .agency-hmpps &,
+                .agency-jac &,
+                .agency-ospt &,
+                .agency-lc &,
+                .agency-cica & {
+                  background-color rgba($primary, 20%)
+                }
+                .agency-hmcts & {
+                  background-color rgba($hmcts_primary, 20%)
+                }
+                .agency-laa & {
+                  background-color rgba($laa_primary, 20%)
+                }
+                .agency-pb & {
+                  background-color rgba($pb_primary, 20%)
+                }
+                .agency-opg & {
+                  background-color rgba($opg_primary, 20%)
+                }
+            }
+          }
+        }
+      }
+    }
+
+    &:hover {
+      nav {
+        max-height 1800px;
+        height: auto;
+        border-bottom  1px solid lighten($border, 60%)
+        transition .8s max-height ease-in-out
       }
     }
 
@@ -31,8 +112,29 @@
       a:hover, a:focus {
         background-color: $light;
         text-decoration: none;
-        +above(m) {
-          border-bottom: 1px solid transparent;
+      }
+    }
+    &:last-of-type {
+      a {
+         .agency-hq &,
+        .agency-hmpps &,
+        .agency-jac &,
+        .agency-ospt &,
+        .agency-lc &,
+        .agency-cica & {
+          background-color rgba($primary, 8%)
+        }
+        .agency-hmcts & {
+          background-color saturation(lighten($hmcts_primary, 85%), 40%)
+        }
+        .agency-laa & {
+          background-color rgba($laa_primary, 8%)
+        }
+        .agency-pb & {
+          background-color rgba($pb_primary, 8%)
+        }
+        .agency-opg & {
+          background-color rgba($opg_primary, 8%)
         }
       }
     }
@@ -46,14 +148,10 @@
     text-decoration: none;
     font-weight: bold;
 
-    +above(m) {
-      border-bottom: 1px solid transparent;
-    }
+  
 
     &:hover {
-      background-color: darken($boxBg, 15%);
-      border-color: $border;
-      text-decoration: underline;
+      background-color: lighten($boxBg, 15%);
     }
     &:focus {
       outline: 0;

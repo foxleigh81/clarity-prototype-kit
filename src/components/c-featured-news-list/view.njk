@@ -1,6 +1,8 @@
 <section class="c-featured-news-list">
   {% for article in featuredNewsArticles %}
-    {% set context = article %}
-    {% include '../c-article-item/view.njk' %}
+    {% if(article.agencies == "all") or (article.agencies.indexOf(agency.shortcode) != -1) %}
+      {% set context = article %}
+      {% include '../c-article-item/view.njk' %}
+    {% endif %}
   {% endfor %}
 </section>

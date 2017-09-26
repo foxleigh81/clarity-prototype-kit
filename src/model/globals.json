@@ -3,9 +3,67 @@
     "host" : "localhost:5000",
     "siteName" : "Clarity rebuild prototype"
   },
+  "agency" : {
+    "fullName" : "Ministry of Justice HQ",
+    "shortcode" : "hq",
+    "knownAs" : "MoJ"
+  },
+  "navigation" : {
+    "componentClass" : "c-global-nav",
+    "menuText" : "Menu",
+    "item" : [
+      {
+        "label" : "Home",
+        "url" : "/",
+        "state" : "noAuth",
+        "agencies" : [
+          "all"
+        ]
+      },
+      {
+        "label" : "News",
+        "url" : "https://intranet.justice.gov.uk/newspage/",
+        "state" : "noAuth",
+        "agencies" : [
+          "all"
+        ]
+      },
+      {
+        "label" : "Events",
+        "url" : "https://intranet.justice.gov.uk/events/",
+        "state" : "noAuth",
+        "agencies" : [
+          "all"
+        ]
+      },
+      {
+        "label" : "Regions",
+        "url" : "https://intranet.justice.gov.uk/regional-pages/",
+        "state" : "noAuth",
+        "agencies" : [
+          "hmcts"
+        ]
+      },
+      {
+        "label" : "Resources",
+        "url" : "/resources.html",
+        "state" : "noAuth",
+        "agencies" : [
+          "all"
+        ]
+      },
+      {
+        "label" : "Blogs",
+        "url" : "https://intranet.justice.gov.uk/blog/",
+        "state" : "onlyAuth",
+        "agencies" : [
+          "all"
+        ]
+      }
+    ]
+  },
   "globalHeader" : {
     "componentClass" : "c-global-header",
-    "propositionTitle" : "Apply for European Structural and Investment Funding",
     "logo" :
       {
         "imagePath" : "static/images/gov.uk_logotype_crown.png",
@@ -13,42 +71,6 @@
         "text" : "gov.uk",
         "url" : "/"
       }
-  },
-  "globalNavigation" : {
-    "componentClass" : "c-global-nav",
-    "menuText" : "Menu",
-    "item" : [
-      {
-        "label" : "Home",
-        "url" : "/",
-        "state" : "all"
-      },
-      {
-        "label" : "News",
-        "url" : "/news",
-        "state" : "noAuth"
-      },
-      {
-        "label" : "Events",
-        "url" : "/events",
-        "state" : "noAuth"
-      },
-      {
-        "label" : "Guidance &amp; forms",
-        "url" : "/guidance",
-        "state" : "noAuth"
-      },
-      {
-        "label" : "About Us",
-        "url" : "/about",
-        "state" : "onlyAuth"
-      },
-      {
-        "label" : "Blog",
-        "url" : "blog",
-        "state" : "onlyAuth"
-      }
-    ]
   },
   "globalFooter" : {
     "componentClass" : "c-global-footer",

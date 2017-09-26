@@ -1,0 +1,15 @@
+// include the toolkit (a suite of variables, classes and mixins)
+@require "../../globals/css/_toolkit"
+
+.c-further-resources {
+  clearfix();
+  padding: $spacing;
+  background: $light;
+  li {
+    column(1/3, $cycle:3)
+    margin-bottom $spacing
+    a {
+      font-weight bold
+    }
+  }
+}

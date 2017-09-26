@@ -1,10 +1,16 @@
-var express = require('express');
-var app = express();
+var express = require('express')
+var app = express()
+var basicAuth = require('express-basic-auth')
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 5000
 
-app.use(express.static(__dirname + '/dist'));
+app.use(basicAuth({
+  users: { 'admin': process.env.AUTH_KEY },
+  challenge: true
+}))
 
-app.listen(port);
+app.use(express.static(__dirname + '/dist'))
 
-console.log('server started ' + port);
+app.listen(port)
+
+console.log('server started ' + port)

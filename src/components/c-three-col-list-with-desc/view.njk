@@ -1,0 +1,24 @@
+<article class="c-three-col-list-with-desc">
+    <h1 class="o-title o-title--page">{{ context.title }}</h1>
+    <section>
+        <div class="l-page-top">
+            {{ context.description | safe }}
+        </div>
+        <div>
+        <ul>
+            {% for item in context.list %}
+                <li>
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                    {% if (item.list) %}
+                        <ul>
+                        {% for subitem in item.list %}
+                            <li><a href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+                        {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+        </div>
+    </section>
+</article>

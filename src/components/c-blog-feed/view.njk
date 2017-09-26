@@ -1,9 +1,12 @@
 <section class="c-blog-feed">
-    <h1 class="o-title o-title--section">Blog</h1>
+    <h1 class="o-title o-title--section">Blogs</h1>
     <div>
-         {% for article in blogArticles %}
-            {% set context = article %}
-            {% include '../c-article-item/view.njk' %}
+        {% for article in blogArticles %}
+            {% if(article.agencies == "all") or (article.agencies.indexOf(agency.shortcode) != -1) %}
+                {% set context = article %}
+                {% include '../c-article-item/view.njk' %}
+            {% endif %}
         {% endfor %}
     </div>
+    <a href="/events/" class="o-see-all-link">See all blogs</a>
 </section>

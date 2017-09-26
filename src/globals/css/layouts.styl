@@ -5,6 +5,7 @@
   padding: $spacing;
   +above(l) {
     padding: 0;
+    padding-top $spacing*2
   }
   .l-full-page {
     column(1)
@@ -18,6 +19,11 @@
     +above(m) {
       column(1/3);
     }
+  }
+
+  .l-page-top {
+    clearfix()
+    margin-bottom $spacing*3
   }
 }
 

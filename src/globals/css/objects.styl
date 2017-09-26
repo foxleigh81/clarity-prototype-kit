@@ -13,8 +13,8 @@
   }
   // Section title
   &--section {
-  	font-size: $mantle;
-  	border-bottom: 2px solid $border;
+  	font-size: $outerCore;
+    margin-bottom $spacing
 	}
   // Subtitle. Same as section title but without border
   &--subtitle {
@@ -31,23 +31,31 @@
 .o-read-more-link {
   clear:both;
   display: block;
+  margin-bottom $spacing*3
+  font-weight bold
+  &:after {
+    padding-left: $spacing;
+    vertical-align: middle;
+    use-icon("\f054");
+    font-size: $baseFont * 1.2;
+  }
 }
 
 .o-button {
-  display: inline-block;
-  padding: $spacing*.6 $spacing*1.5 $spacing*.5;
-  cursor: pointer;
-  text-decoration: none;
-  vertical-align: top;
-  background-color: $button;
-  box-shadow: 0 2px 0 darken($button, 80%);
-  color: $light;
-  font-size: $outerCore;
-  border: none;
-  line-height: $lineHeight*1.2;
-  &:hover {
-    background-color: darken($button, 20%);
+  button($primary)
+  .agency-hmcts & {
+    button($hmcts_primary)
   }
+  .agency-opg & {
+    button($opg_primary)
+  }
+  .agency-laa & {
+    button($laa_primary)
+  }
+  .agency-pb & {
+    button($pb_primary)
+  }
+  
 }
 
 // A box which clears anything before or after it and has some padding and margin applied
@@ -62,20 +70,19 @@
 .o-text-button {
   border: 0;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
   color: $links;
   cursor: pointer;
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 
 // Don't use this in code, it's only to extend .o-arrow-toggle-link
 .extend-arrow {
-  position: absolute;
-  top: $spacing*.7;
-  use-icon('\ea43')
-  vertical-align: middle;
+  use-icon('\f078')
+  vertical-align: top;
+  margin-right: $spacing;
 }
 
 .o-arrow-toggle-link {
@@ -83,7 +90,6 @@
   display: block;
   text-align: center;
   margin-bottom: $spacing;
-  padding-left: $spacing*3
 
   +above(m) {
     text-align: left;
@@ -91,20 +97,7 @@
   }
 
   &:before {
-    left: 0;
     @extend .extend-arrow;
   }
 }
 
-.o-arrow-toggle-link-after {
-    @extend .o-arrow-toggle-link
-    padding-left: 0
-    padding-right: $spacing*2
-    &:before {
-      display: none;
-    }
-    &:after {
-      right:0;
-      @extend .extend-arrow;
-    }
-  }

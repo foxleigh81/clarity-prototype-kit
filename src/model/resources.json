@@ -1,0 +1,310 @@
+{
+  "meta" : {
+    "pageTitle" : "Resources",
+    "description" : "to be added",
+    "canonical" : "resources.html"
+  },
+  "myWork" : [
+    {
+      "title" : "Buildings and facilities",
+      "url" : "",
+      "external" : true,
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Contact shared services",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Induction",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },{
+      "title" : "Crown Court",
+      "url" : "",
+      "external" : true,
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "Enforcement",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "Family",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "Legal Services",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "Magistrates - pre-bail charge",
+      "url" : "",
+      "external" : true,
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "Tribunal",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "About MoJ",
+      "url" : "about.html",
+      "agencies" : [
+        "hq"
+      ]
+    }
+  ],
+  "quickLinks" : [
+    {
+      "title" : "Civil Service Learning",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "It portal",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Jobs",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Form finder",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "SOP",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "Travel booking",
+      "url" : "",
+      "agencies" : [
+        "hmcts"
+      ]
+    }
+  ],
+  "commonResources" : [
+    {
+      "title" : "Buildings and facilities",
+      "url" : "",
+      "desc" : "Get details on HMCTS offices and the services they offer to employees and visitors.",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "HR",
+      "url" : "",
+      "desc" : "Information on pay, pensions, performance and conduct at work.",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Health and safety",
+      "url" : "",
+      "desc" : "Learn about fire safety, assessing risk and workplace wellbeing.",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "People",
+      "url" : "",
+      "desc" : "Includes diversity and inclusion, staff directories, employee statistics and survey results.",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "IT & Digital",
+      "url" : "",
+      "desc" : "Support information, planned engineering works, opening hours and more.",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Communications",
+      "url" : "",
+      "desc" : "Get communication contacts, branding templates and social media guidance.",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Sustainability and the environment",
+      "url" : "",
+      "desc" : "Find out about HMCTS initiatives, how to plan events or become a Green Champion.",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Knowledge and information",
+      "url" : "",
+      "desc" : "How to manage, protect and provide information to meet policies and legislation.",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Security",
+      "url" : "",
+      "desc" : "Learn about corporate security policies, incident reporting and emergencies.",
+      "agencies" : [
+        "all"
+      ]
+    }
+  ],
+  "furtherResources" : [
+    {
+      "title" : "Change Management",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Internal Audit",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Operational Delivery Profession (ODP)",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Charities and volunteering",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Legal Services",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Research and Analysis",
+      "url" : ""
+    },
+    {
+      "title" : "Commercial and Contract Management (CCM)",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Nominiations",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Reserve forces",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Devolution",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Policy making",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Risk Management",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Financial management",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Pubilc consultation guidance",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "Working with arm's length bodies (ALBs)",
+      "url" : "",
+      "agencies" : [
+        "all"
+      ]
+    },
+    {
+      "title" : "About HMCTS",
+      "url" : "about.html",
+      "agencies" : [
+        "hmcts"
+      ]
+    }
+  ]
+}

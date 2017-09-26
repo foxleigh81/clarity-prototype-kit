@@ -2,7 +2,9 @@
     <h1 class="o-title o-title--section">Follow us</h1>
     <ul>
         {% for link in socialLinks %}
-            <li><a href="{{ link.url }}"><span class="u-icon u-icon--{{ link.class }}"></span> {{ link.title }}</a></li>
+            {% if(link.agencies == "all") or (link.agencies.indexOf(agency.shortcode) != -1) %}
+                <li><a href="{{ link.url }}"><span class="u-icon u-icon--{{ link.class }}"></span> {{ link.title }}</a></li>
+            {% endif %}
         {% endfor %}
     </ul>
 </section>

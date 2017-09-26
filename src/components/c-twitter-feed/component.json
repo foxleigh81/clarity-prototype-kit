@@ -1,0 +1,25 @@
+{
+  "name" : "Twitter feed",
+  "version" : "1.0.0",
+  "creator" : {
+    "name" : "Alex Foxleigh",
+    "github_username" : "foxleigh81"
+  },
+  "description" : "The social sharing links",
+  "standard_or_universal" : "universal",
+  "parents" : "",
+  "children" : "",
+  "notes" : {
+    "backend" : "",
+    "frontend" : ""
+  },
+  "backend_classes" : {},
+  "creation_ticket" : "https://www.pivotaltracker.com/story/show/150672589",
+  "changelog" : [
+    {
+      "date" : "04/09/17",
+      "author" : "Alex Foxleigh",
+      "description" : "Created component"
+    }
+  ]
+}

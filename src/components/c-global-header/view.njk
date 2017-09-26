@@ -24,9 +24,11 @@
   <!--[if lt IE 9]>
     <script type="text/javascript" src="static/vendors/respond.min.js"></script>
     <script type="text/javascript" src="static/vendors/ie8-js-html5shiv.js"></script>
+    <script type="text/javascript" src="static/vendors/ie7-icon-loader.js"></script>
     <link rel="stylesheet" href="static/css/ie.min.css" media="screen">
   <![endif]-->
 </head>
-<body class="agency-hq">
+<body data-agency="{{ agency.shortcode }}" class="agency-{{ agency.shortcode | lower}}">
   <a class="u-skip-link" href="#maincontent">Skip to main content</a>
+  {# include '../c-notify/view.njk' #}
   {% include "../c-header-container/view.njk" %}

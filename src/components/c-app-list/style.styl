@@ -1,10 +1,12 @@
 // include the toolkit (a suite of variables, classes and mixins)
 @require "../../globals/css/_toolkit"
 
-
 .c-app-list {
   clearfix();
   margin-bottom: $spacing;
+  padding: $spacing;
+  padding-bottom: 0;
+  background: $primary;
 
   li {
     column(1/2, $cycle: 2);
@@ -13,13 +15,15 @@
 
   a {
     display: block;
+    color: $light;
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
       .u-icon {
-        color: $light;
-        background-color: $primary;
+        background-color: $light;
+      }
+      span+span {
+        text-decoration underline
       }
     }
 
@@ -36,9 +40,10 @@
     display: inline-block;
     vertical-align: middle;
     border: 1px solid $border;
-    padding: $spacing*.5;
+    padding: $spacing*.3;
     margin-right: $spacing;
     font-size: $mantle;
-    color: $border;
+    color: $primary;
+    background: $light;
   }
 }

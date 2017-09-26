@@ -1,22 +1,21 @@
 {% extends "../templates/layout.njk" %}
 {% block content %}
-    <div id="maincontent" class="u-wrapper l-main t-home">
-        <h1 class="o-title o-title--page">{{ meta.pageTitle }}</h1>
+    <section id="maincontent" class="u-wrapper l-main t-home" role="main">
         <!-- c-home-page-primary starts here -->
         <section class="c-home-page-primary l-primary" role="main">
             {% include '../components/c-news-widget/view.njk' %}
-            {% include '../components/c-need-to-know-widget/view.njk' %}
-            {% include '../components/c-events-widget/view.njk' %}
+            {% include '../components/c-twitter-feed/view.njk' %}
         </section>
         <!-- c-home-page-primary ends here -->
         <!-- c-home-page-secondary starts here -->
         <section class="c-home-page-secondary l-secondary" role="complementary">
-            {% include '../components/c-my-moj/view.njk' %}
-            {% include '../components/c-my-work/view.njk' %}
-            {% include '../components/c-quick-links/view.njk' %}
+            <h1 class="o-title o-title--section">MoJ Tools and Services</h1>
+            {% include '../components/c-my-moj/view.njk' %}      
+            {# include '../components/c-polls/view.njk' #}
             {% include '../components/c-blog-feed/view.njk' %}
+            {% include '../components/c-events-widget/view.njk' %}
             {% include '../components/c-social-links/view.njk' %}
         </section>
         <!-- c-home-page-secondary ends here -->
-  </div>
+    </section>
 {% endblock %}

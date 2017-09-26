@@ -1,0 +1,167 @@
+{
+  "meta" : {
+    "pageTitle" : "About",
+    "description" : "to be added",
+    "canonical" : "about.html"
+  },
+  "descriptionList" : [
+    {
+      "title" : "About HMCTS",
+      "description" : "<p>HM Courts &amp; Tribunals Services (HMCTS) is responsible for the admininstration of criminal, civil and family courts and tribunals in England and Wales. HMCTS is an executive agency, sponsored by the Ministry of Justice.</p>",
+      "list" : [
+        {
+          "title" : "HMCTS Board and Sub-Committees",
+          "url" : "",
+          "list" : [
+            {
+              "title" : "Audit and Risk Assurance Committee",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "Board Secretariat",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "HMCTS Board",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "HMCTS Change Portfolio Board",
+              "url" : "",
+              "list" : []
+            }
+          ]
+        },
+        {
+          "title" : "Justice Matters",
+          "url" : "",
+          "list" : []
+        },
+        {
+          "title" : "Senior Management Team",
+          "url" : "",
+          "list" : [
+            {
+              "title" : "Chief Executive",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "Senior Management Team members and biographies",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "Submitting papers",
+              "url" : "",
+              "list" : []
+            }
+          ]
+        },
+        {
+          "title" : "HMCTS Structure",
+          "url" : "",
+          "list" : [
+            {
+              "title" : "Change directorate",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "Communications",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "Continuous improvement",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "Courts & Tribunal Development directorate",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "Customer directorate",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "Human resource",
+              "url" : "",
+              "list" : []
+            }
+          ]
+        }
+      ],
+      "agencies" : [
+        "hmcts"
+      ]
+    },
+    {
+      "title" : "About Ministry of Justice",
+      "description" : "<p>Ministry of Justice description goes here</p>",
+      "list" : [
+        {
+          "title" : "Organisation",
+          "url" : "",
+          "list" : [
+            {
+              "title" : "Agencies and partners",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "Business groups",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "Departmental Board and committees",
+              "url" : "",
+              "list" : []
+            }
+          ]
+        },
+        {
+          "title" : "Ministers and Parliament",
+          "url" : "",
+          "list" : [
+            {
+              "title" : "Ministers",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "Parliament",
+              "url" : "",
+              "list" : []
+            },
+            {
+              "title" : "Working with private offices",
+              "url" : "",
+              "list" : []
+            }
+          ]
+        },
+        {
+          "title" : "Delivering our strategy for the next 10 years",
+          "url" : "",
+          "list" : []
+        },
+        {
+          "title" : "Our Values",
+          "url" : "",
+          "list" : []
+        }
+      ],
+      "agencies" : [
+        "all"
+      ]
+    }
+  ]
+}
