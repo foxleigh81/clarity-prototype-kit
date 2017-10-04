@@ -4,34 +4,54 @@
 
 .c-logo-bar {
   position: relative;
-  padding: $spacing*3 $spacing $spacing;
+  padding: $spacing;
+  +above(m) {
+    padding: $spacing*3 $spacing $spacing;
+  }
+
   &__title {
-    width: 55%;
-    float:left;
+    .menu-active & {
+      position relative
+      top: $spacing
+      z-index 10000
+      font-size: $outerCore
+      margin-right: $spacing
+      padding-left: $spacing
+      border-left: 10px solid;
+    }
+    display block
+    width: 82%;
+    +above(m) {
+      width: 55%;
+      float:left;
+    }
+    
+    
     ff-title()
     color: $dark
     font-size $crust;
     margin-right: $spacing*2
     padding-left: $spacing*2;
+    border-left: 20px solid;
     .agency-hq &,
     .agency-hmpps &,
     .agency-jac &,
     .agency-ospt &,
     .agency-lc &,
     .agency-cica & {
-      border-left: 20px solid $primary;
+      border-color: $primary;
     }
     .agency-hmcts & {
-      border-left: 20px solid $hmcts_primary;
+      border-color: $hmcts_primary;
     }
     .agency-laa & {
-      border-left: 20px solid $laa_primary;
+      border-color: $laa_primary;
     }
     .agency-opg & {
-      border-left: 20px solid $opg_primary;
+      border-color: $opg_primary;
     }
     .agency-pb & {
-      border-left: 20px solid $pb_primary;
+      border-color: $pb_primary;
     }
     
   }

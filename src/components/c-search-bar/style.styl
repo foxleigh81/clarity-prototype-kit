@@ -9,12 +9,10 @@
 
 .c-search-bar {
   clearfix();
-  span(1/3)
-  float:right;
-  padding: 0 0 $spacing*2 0;
-  
-  &__container {
-    
+  +above(m) {
+    span(1/3)
+    float:right;
+    padding: 0 0 $spacing*2 0;
   }
 
   input {
@@ -62,7 +60,11 @@
   .c-header-container & {
     //background-color: $primary;
     padding: 0
-    margin-bottom $spacing*3
+    margin: $spacing 0;
+    +above(m) {
+      margin-bottom $spacing*3
+    }
+    
     button {
       background-color: darken($boxBg, 30%);
     
