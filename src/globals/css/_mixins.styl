@@ -26,6 +26,14 @@ real-list() {
   }
 }
 
+// The widget mixin adds the common widget box style that is prevelant throughout the site
+widget(padding = $spacing, margin = 0 0 $spacing 0) {
+  position: relative;
+  background-color $light;
+  padding: padding;
+  margin: margin;
+}
+
 // A set of fixes intended to limit the visibility of mistakes the editor can make in the CMS
 cms-fixes() {
   // If certain empty elements are added in the CMS. Simply don't show them.
