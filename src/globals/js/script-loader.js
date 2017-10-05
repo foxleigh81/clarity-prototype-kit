@@ -20,6 +20,7 @@ $(document).ready(function () {
   $('.js-main-nav-bar').moji_toggleMenu()
   // Load scripts
   $('.js-clarity-toolbar').moji_clarityToolbar()
+  $('.js-featured-news-list').moji_featuredNews()
   $('.js-article-item').moji_bigTarget('.c-article-item__content > h1 > a')
   $('.js-left-hand-menu').moji_leftHandMenu()
   $('.js-need-to-know-widget').moji_slider(true)
