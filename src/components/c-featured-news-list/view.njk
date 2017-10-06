@@ -1,4 +1,4 @@
-<section class="c-featured-news-list">
+<section class="c-featured-news-list js-featured-news-list">
   {% for article in featuredNewsArticles %}
     {% if(article.agencies == "all") or (article.agencies.indexOf(agency.shortcode) != -1) %}
       {% set context = article %}

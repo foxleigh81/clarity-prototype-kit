@@ -5,12 +5,12 @@
 
 .c-article-item {
     clearfix();
-    position: relative;
     overflow hidden
     border-bottom: 0;
-    background: $light;
-    margin-bottom: $spacing;
-    display: table;
+    widget(0)
+    +above(m) {
+      display: table;
+    }
 
     h1 {
       font-size $outerCore
@@ -18,14 +18,14 @@
         color $primary;
       }
     }
+
     &__meta {
-      position absolute;
-      bottom: $spacing
-      width: 100%;
+      margin-top: $spacing;
       a:hover { 
         text-decoration underline
        }
     }
+
     &__dateline {
       font-size: $smallCopy;
       color: $dark;
@@ -65,7 +65,9 @@
     }
 
   > img {
-    display: table-cell
+    +above(m) {
+      display: table-cell
+    }
     height: 100%;
     width: 100%;
   }
@@ -73,10 +75,11 @@
   &__content {
     position relative
     vertical-align: top
-    width: 50%;
-    padding: $spacing $spacing*1.5 $spacing*7;
-    display: table-cell;
-    
+    padding: $spacing*   $spacing*1.5 $spacing;
+    +above(m) {
+      width: 50%;
+      display: table-cell;
+    }
   }
 
   h1 {
@@ -119,20 +122,22 @@
   // Featured news
   .c-featured-news-list & {
     +above('s') {
-      &:first-child {
+      &.article-1-of-2,
+      &.article-1-of-3 {
         column(1); 
-        
         h1 {
           font-size: $mantle;
         }  
       }
-      &:nth-child(2),
-      &:nth-child(3) {
+      &.article-1-of-2,
+      &.article-2-of-2,
+      &.article-2-of-3,
+      &.article-3-of-3 {
         column(1/2, $gutter: $spacing*2)
         > img, 
         .c-article-item__content {
           stack();
-          min-height: $spacing*15
+          min-height: $spacing*16.5
         }
         >img {
           height: 236px; // Height locked for demo
@@ -156,9 +161,20 @@
     +above('s') {
       column(1/2, $cycle: 2, $gutter: $spacing*2);
     }
+    img {
+      width: 50%;
+      +above(m) {
+        width 100%;
+      }
+    }
 
     &__content {
       padding-bottom: $spacing*.5
+      width: 50%;
+      float: right;
+      +above(m) {
+        float: none;
+      }
     }
     &__meta {
       position relative
