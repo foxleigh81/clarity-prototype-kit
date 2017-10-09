@@ -56,6 +56,7 @@
     "gulp-uglify": "latest",
     "gulp-util": "^3.0.7",
     "gutil": "^1.6.4",
+    "ie8-js": "^0.1.2",
     "imagemin-pngquant": "latest",
     "jeet": "^7.1.0",
     "jquery": "^3.2.1",
