@@ -9,8 +9,33 @@
 
   // Featured news
   .c-featured-news-list & {
-    width: 47%;
-    float:left;
+     &.article-1-of-2,
+      &.article-1-of-3 {
+        width: 100%;
+        float: none;
+        h1 {
+          font-size: $mantle;
+        }  
+      }
+      &.article-1-of-2,
+      &.article-2-of-3 {
+        width: 49%;
+        float: left;
+        margin-right: 1%;
+        > img, 
+        .c-article-item__content {
+          stack();
+          min-height: $spacing*16.5
+        }
+        >img {
+          height: 236px; // Height locked for demo
+        }
+      }
+      &.article-2-of-2,
+      &.article-3-of-3 {
+        float: right;
+        margin-right: 0;
+      }
   }
 
   // Regular news
