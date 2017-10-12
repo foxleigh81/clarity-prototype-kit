@@ -3,8 +3,31 @@
 
 .c-article-byline {
 
+  &__photo { 
+    width $spacing*5
+    border-radius: 100%;
+    vertical-align middle
+    margin-right $spacing
+    margin-bottom $spacing
+  }
 
   // Parent overrides
+
+  .c-article-item--news & {
+    display none
+  }
+
+  .c-article-item--blogs & {
+    display block
+    margin: 0;
+    a {
+      color: $primary;
+    }
+    &__photo {
+      float:left;
+      height: auto;
+    }
+  }
 
   .c-news-article & {
     &__photo {

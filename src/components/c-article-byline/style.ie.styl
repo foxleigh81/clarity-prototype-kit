@@ -1,0 +1,17 @@
+// include the toolkit (a suite of variables, classes and mixins)
+@require "../../globals/css/_toolkit"
+
+.c-article-byline {
+
+  &__photo { 
+   border: 0;
+  }
+
+
+  // PARENT OVERRIDES
+
+  .t-author-page & {
+    margin-bottom: $spacing*3;
+  }
+}
+

@@ -30,23 +30,6 @@
       font-size: $smallCopy;
       color: $dark;
     }
-    // TODO: Refactor into a parent override on .c-article-byline component
-    .c-article-byline {
-      display none
-      margin-left: $spacing;
-      margin-bottom: $spacing*.5
-      a {
-        color: $dark;
-       
-      }
-      img {
-        width $spacing*5
-        border-radius: 100%;
-        vertical-align middle
-        margin-right $spacing
-        margin-bottom $spacing
-      }
-    }
 
     // TODO: Refactor into it's own component
     .c-categories {
@@ -93,20 +76,6 @@
     }
     &__excerpt {
       display: none;
-    }
-    
-    .c-article-byline {
-      display block
-      margin: 0;
-      a {
-        color: $primary;
-      }
-      img {
-        display block
-        float:left;
-        border-radius: 100%;
-        height: auto;
-      }
     }
   }
 
