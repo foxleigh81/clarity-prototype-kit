@@ -1,0 +1,22 @@
+// include the toolkit (a suite of variables, classes and mixins)
+@require "../../globals/css/_ietoolkit"
+
+.c-search-bar {
+  ieoldcf();
+  overflow hidden
+  +above(m) {
+    width: 33%;
+    float: right;
+    padding: 0 0 $spacing*2 0;
+  }
+
+  input {
+    width: 99%;
+    height: 38px !important;
+    padding: 5px 0 0 5px !important;
+  }
+  button {
+    width: 40px !important
+    height: 40px !important
+  }
+}

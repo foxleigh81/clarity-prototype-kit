@@ -202,7 +202,7 @@ gulp.task('static', function (done) {
 // Move Views
 gulp.task('views', function () {
   'use strict'
-  var renamer = new Renamer();
+  var renamer = new Renamer()
   return gulp.src([
     'src/components/**/*.njk'
   ])

@@ -20,7 +20,7 @@
       {% endif %}
       <div class="c-categories">
         <ul>
-          <li><a href="">{{context.type}}</a></li>
+          <li><a href="">{{context.type}}</a><span data-legacy-remove="ie7">|</span></li>
            {% for item in context.tags %}
             <li>{{item}}</li>
           {% endfor %}

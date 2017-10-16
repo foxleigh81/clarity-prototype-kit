@@ -31,35 +31,14 @@
       color: $dark;
     }
 
-    .c-article-byline {
-      display none
-      margin-left: $spacing;
-      margin-bottom: $spacing*.5
-      a {
-        color: $dark;
-       
-      }
-      img {
-        width $spacing*5
-        border-radius: 100%;
-        vertical-align middle
-        margin-right $spacing
-        margin-bottom $spacing
-      }
-    }
-
+    // TODO: Refactor into it's own component
     .c-categories {
       margin-top $spacing*1
       li {
         display inline
         text-transform: capitalize;
-        &:after {
-          content: " | "
-        }
-        &:last-child {
-          &:after {
-            display none
-          }
+        span {
+          padding: 0 $spacing*.5
         }
       }
     }
@@ -97,20 +76,6 @@
     }
     &__excerpt {
       display: none;
-    }
-    
-    .c-article-byline {
-      display block
-      margin: 0;
-      a {
-        color: $primary;
-      }
-      img {
-        display block
-        float:left;
-        border-radius: 100%;
-        height: auto;
-      }
     }
   }
 
