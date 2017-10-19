@@ -1,0 +1,38 @@
+{
+  "meta" : {
+    "pageTitle" : "MoJ shortlisted for Civil Service Awards",
+    "description" : "to be added",
+    "canonical" : "article.html"
+  },
+  "breadcrumbs" : [
+    {
+      "name" : "home",
+      "url" : "/"
+    },
+    {
+      "name" : "news",
+      "url" : "/news"
+    },
+    {
+      "name" : "MoJ shortlisted for Civil Service Awards",
+      "url" : ""
+    }
+  ],
+  "articleContent" : {
+    "id" : "1",
+    "type" : "News",
+    "title" : "MoJ shortlisted for Civil Service Awards",
+    "subTitle" : "",
+    "category": {
+      "name" : "Internal Communications",
+      "url" : "/category/internal-comms"
+    },
+    "publishedDate" : "17 October 2017",
+    "img" : {
+      "src": "static/images/uploads/example-image-1.jpg",
+      "description" : "The description of the image"
+    },
+    "excerpt" : "Four teams from across MoJ shortlisted for prestigious awards on 23 November.",
+    "body" : "<p>The shortlist for the Civil Service Awards 2017 <a href=\"http://www.civilserviceawards.com/shortlist\" rel=\"external\">has been announced</a>. Congratulations to four MoJ nominations for making the final shortlist across different categories.</p><p>The annual awards recognise and celebrate the wealth of inspirational individuals and innovative projects within the Civil Service. For the last 12 years, these unique and empowering awards help to spread best practice right across government, sharing innovation, learning and leadership.</p><p>Information on the four MoJ shortlisted nominations is below:</p><ul class=\"\"><li>The Collaboration Award: <strong>HMP Berwyn Project Delivery Team, HMPPS</strong></li></ul><p>The team developed strong partnerships between a number of stakeholders to redevelop a former factory site in Wrexham into the first prison in North Wales. Their work used local goods, services and labour, improved transport links, and provided jobs to make a significant positive impact on the community.</p><ul class=\"\"><li>The Dame Lesley Strathie Operational Excellence Award: <strong>CPS &amp; HMCTS</strong></li></ul><p>CPS and HMCTS collaborated to transform the Crown Court into a digital environment using a new Digital Case System (DCS). As a result the CPS used 29m less sheets of paper, reduced their stationary costs by £2.7m, and saved 245 trees. The collaborative cloud-based system helps in the preparation and presentation of cases in court, all in real-time.</p><ul class=\"\"><li>The Digital Award: <strong>Send money to prisoners team, MoJ</strong> </li></ul><p>The team has excelled in its delivery of a digital solution that allows people to send money to prisoners online through bank transfer or debit card. Since November 2016, over £13m has been processed sent using the tool, about half of all money sent to prisoners. A satisfaction rate of over 96% is testimony to their user-centric approach, and the service was the first in government to use Gov.uk Pay.</p><ul><li>The Diversity and Inclusion Award: <strong>Schools Outreach Programme, MoJ</strong> </li></ul><p>The programme is about engaging with young people and raising their career aspirations by showing them that the Civil Service – particularly MoJ – is a vibrant, diverse and inclusive place to work. Volunteers work with schools to deliver sessions that help to prepare young people transition from school into employment, giving them the skills and confidence to succeed. They also signpost entry points into MoJ, including apprenticeships and the Fast Stream. Since the Programme was set up in October 2016, around 400 schools have been contacted and work is already underway with a range of schools across the UK.</p><p>Good luck to our shortlisted MoJ colleagues at the award ceremony, which takes place on 23 November 2017.</p><p>For more information visit the <a href=\"http://www.civilserviceawards.com/\" rel=\"external\">Civil Service Awards 2017 website</a>.</p>"
+  }
+}
