@@ -2,7 +2,7 @@
     <span>Switch to another intranet</span>
     <ul>
         {% for agency in agencies %}
-            <li data-agency="{{ agency.shortcode }}"><a href="">{{ agency.fullName }}</a></li>
+            <li data-agency="{{ agency.shortcode }}"><a href="?agency={{ agency.shortcode }}">{{ agency.fullName }}</a></li>
         {% endfor %}
     </ul>
 </nav>
