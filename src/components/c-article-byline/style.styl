@@ -3,8 +3,31 @@
 
 .c-article-byline {
 
+  &__photo { 
+    width $spacing*5
+    border-radius: 100%;
+    vertical-align middle
+    margin-right $spacing
+    margin-bottom $spacing
+  }
 
   // Parent overrides
+
+  .c-article-item--news & {
+    display none
+  }
+
+  .c-article-item--blogs & {
+    display block
+    margin: 0;
+    a {
+      color: $primary;
+    }
+    &__photo {
+      float:left;
+      height: auto;
+    }
+  }
 
   .c-news-article & {
     &__photo {
@@ -18,13 +41,13 @@
   .c-news-article &
   .c-blog-article & {
     font-size: $outerCore;
-    margin-bottom: $spacing*3
+    margin-bottom: $spacing*3;
   }
 
   .c-blog-article & {
     &__photo {
-      display:block;
       float:left;
+      display:block;
       border-radius: 100%;
       width: 80px; //fixed width
       height: auto;
