@@ -6,16 +6,17 @@
   },
   "featuredNewsArticles" : [
     {
-      "title" : "Civil Service Pension Scheme update",
+      "title" : "Flexible working in an operational team",
       "imgSrc" : "static/images/uploads/example-image-1.jpg",
       "imgAlt" : "Two people talking",
       "url" : "test1.html",
-      "dateline" : "Monday 18 May",
-      "byline" : "Shirley-Anne Mullen",
+      "dateline" : "19 Oct 2017",
+      "byline" : "Rowena Foxwell",
+      "byImg" : "static/images/uploads/author-image-1.jpg",
       "agency" : "HMCTS",
-      "type" : "news",
+      "type" : "blogs",
       "tags" : [ "Strategy" ],
-      "excerpt" : "Changes to opting out and rejoining the scheme",
+      "excerpt" : "Rowena Foxwell shares how Smarter Working has benefited her team in the LAA.",
       "comments" : 6,
       "likes" : 67,
       "agencies" : [
@@ -24,31 +25,31 @@
       ]
     },
     {
-      "title" : "Our future judicial relationship with the EU",
+      "title" : "MoJ Schools Outreach Programme wins D&I Award",
       "imgSrc" : "static/images/uploads/example-image-2.jpg",
       "imgAlt" : "Two people talking",
       "url" : "test1.html",
-      "dateline" : "Monday 18 May",
-      "byline" : "Shirley-Anne Mullen",
+      "dateline" : "16 Oct 2017",
+      "byline" : "",
       "agency" : "HQ",
       "type" : "news",
-      "tags" : [ "Justice matters" ],
+      "tags" : [ ],
       "excerpt" : "",
       "agencies" : [
         "all"
       ]
     },
     {
-      "title" : "Is neurointervention the future of sentencing?",
+      "title" : "Using the values toolkit: Together",
       "imgSrc" : "static/images/uploads/example-image-10.jpg",
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
-      "dateline" : "Thursday 24 May",
-      "byline" : "Chris Malone",
+      "dateline" : "16 October 2017",
+      "byline" : "",
       "byImg" : "static/images/uploads/author-image-1.jpg",
-      "type" : "blogs",
-      "tags" : [ "From MoJ" ],
-      "excerpt" : "",
+      "type" : "news",
+      "tags" : [ "Internal Communications" ],
+      "excerpt" : "Use this exercise to see how you can display the value \"together\" more regularly.",
       "comments" : 8,
       "likes" : 17,
       "agencies" : [
@@ -58,30 +59,30 @@
   ],
   "newsArticles" : [
     {
-      "title" : "Interdepartmental loan opportunity",
+      "title" : "October is Black History Month",
       "imgSrc" : "static/images/uploads/example-image-9.jpg",
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
-      "dateline" : "Thursday 24 May",
+      "dateline" : "13 Oct 2017",
       "byline" : "Shirley-Anne Mullen",
       "type" : "news",
-      "tags" : [ "From MoJ" ],
-      "excerpt" : "",
+      "tags" : [ "Internal Communications" ],
+      "excerpt" : "Attend a number of cross-government events.",
       "agencies" : [
         "all"
       ]
     },
     {
-      "title" : "IDAHOT - My own experience",
+      "title" : "Annual Alloance",
       "imgSrc" : "static/images/uploads/example-image-4.jpg",
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
-      "dateline" : "Sunday 17 May",
+      "dateline" : "13 Oct 2017",
       "byline" : "Nathaniel Dale",
       "byImg" : "static/images/uploads/author-image-4.jpg",
       "type" : "news",
-      "tags" : [ "From MoJ" ],
-      "excerpt" : "",
+      "tags" : [ "Internal Communications" ],
+      "excerpt" : "Pension information primarily for Band A and above.",
       "comments" : 11,
       "likes" : 136,
       "agencies" : [
@@ -89,41 +90,41 @@
       ]
     },
     {
-      "title" : "Security threat level changes",
+      "title" : "Join the Age Champions webchat",
       "imgSrc" : "static/images/uploads/example-image-5.jpg",
       "imgAlt" : "MoJ Entrance",
       "url" : "test1.html",
-      "dateline" : "Thursday 24 May",
+      "dateline" : "12 Oct 2017",
       "byline" : "Shirley-Anne Mullen",
       "type" : "news",
-      "tags" : [ "Announcement" ],
-      "excerpt" : "",
+      "tags" : [ "Internal Communications" ],
+      "excerpt" : "Tell us about what matters most to you.",
       "agencies" : [
         "all"
       ]
     },
     {
-      "title" : "Viewing your payslip, P60 & SOP availability",
+      "title" : "Becoming the UK’s most inclusive employer",
       "imgSrc" : "static/images/uploads/example-image-6.jpg",
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
-      "dateline" : "Tuesday 19 May",
+      "dateline" : "16 Oct 2017",
       "byline" : "Shirley-Anne Mullen",
       "type" : "news",
-      "tags" : [ "HMCTS" ],
-      "excerpt" : "",
+      "tags" : [ "Internal Communications" ],
+      "excerpt" : "The Civil Service Diversity & Inclusion Strategy is launched today.",
       "agencies" : [
         "all"
       ]
     },
     {
-      "title" : "Delivering the future",
+      "title" : "MoJ shortlisted for Civil Service Awards",
       "imgSrc" : "static/images/uploads/example-image-7.jpg",
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
-      "dateline" : "Monday 18 May",
+      "dateline" : "17 Oct 2017",
       "byline" : "Shirley-Anne Mullen",
-      "excerpt" : "",
+      "excerpt" : "Four teams from across MoJ shortlisted for prestigious awards on 23 November.",
       "agencies" : [
         "all"
       ]
@@ -265,13 +266,13 @@
   ],
   "blogArticles" : [
     {
-      "title" : "Leadership – Can it be learnt?",
-      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/moj-intranet-demo/uploads/2017/05/smaller-image-128x128.jpg",
+      "title" : "Our value: together",
+      "imgSrc" : "",
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
-      "dateline" : "Friday 30 May",
-      "byline" : "Roshnee Patel",
-      "byImg" : "static/images/uploads/author-image-2.jpg",
+      "dateline" : "16 Oct 2017",
+      "byline" : "Mike Driver",
+      "byImg" : "static/images/uploads/author-image-2.png",
       "type" : "blogs",
       "tags" : [ "From MoJ" ],
       "excerpt" : "",
@@ -282,12 +283,12 @@
       ]
     },
     {
-      "title" : "Spring clean your electronic information",
-      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/intranet-dev-storage-ewxz0sm33s64/uploads/2017/05/Amie-1-128x128.jpg",
+      "title" : "“…., and the winner is?”",
+      "imgSrc" : "",
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
-      "dateline" : "Tuesday 26 May",
-      "byline" : "Amie Alekna",
+      "dateline" : "19 Oct 2017",
+      "byline" : "Rob Neil",
       "byImg" : "static/images/uploads/author-image-3.jpg",
       "type" : "blogs",
       "tags" : [ "From MoJ" ],
@@ -297,12 +298,12 @@
       ]
     },
     {
-      "title" : "What Ramadan means to me",
-      "imgSrc" : "https://s3-eu-west-1.amazonaws.com/intranet-dev-storage-ewxz0sm33s64/uploads/2017/05/dawood_mamoon_image-128x128.jpg",
+      "title" : "Work is what you do, not where you go",
+      "imgSrc" : "",
       "imgAlt" : "Alt tag goes here",
       "url" : "test1.html",
-      "dateline" : "Thursday 24 May",
-      "byline" : "Dawood Mamoon",
+      "dateline" : "13 Oct 2017",
+      "byline" : "Sachia Thompson",
       "byImg" : "static/images/uploads/author-image-5.jpg",
       "type" : "blogs",
       "tags" : [ "From MoJ" ],

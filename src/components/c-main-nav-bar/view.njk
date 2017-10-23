@@ -5,11 +5,11 @@
       {# Loop through navigation and show the links #}
       {% for item in navigation.item %}
         {% if(item.agencies == "all") or (item.agencies == agency.shortcode) %}
-          <li><a href="{{item.url}}?agency={{agency.shortcode | lower}}">{{item.label}}</a></li>
+          <li><a href="{{item.url}}?agency={{req.query.agency}}">{{item.label}}</a></li>
         {% endif %}
       {% endfor %}
       <li>
-        <a href="">Change intranet</a>
+        <a>Change intranet</a>
         {% include "../c-intranet-switcher/view.njk" %}
       </li>
     </ul>

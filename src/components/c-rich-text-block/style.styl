@@ -2,6 +2,8 @@
 @require "../../globals/css/_toolkit"
 
 .c-rich-text-block {
+  cmsfixes()
+
   h2,
   h3,
   h4,
@@ -59,10 +61,28 @@
     white-space: pre-wrap;
     word-wrap: break-word;
     font-size: $outerCore;
+    line-height: 2
   }
 
-  blockquote {
-    margin-bottom: $spacing;
+  blockquote, q {
+    margin: $spacing*3;
+    background-color: rgba($primary, 10%);
+    padding: $spacing*4
+    &:before {
+      use-icon("\e977");
+    }
+    footer {
+     border-top: 1px dotted rgba($dark, 50%);
+     padding-top $spacing*2;
+    }
+    p {
+      margin-bottom 0
+    }
+  }
+
+  q {
+    padding: $spacing;
+    margin: auto;
   }
 
   a {
@@ -76,7 +96,7 @@
 
   ul, ol {
     real-list()
-    margin-bottom: $spacing;
+    margin-bottom: $spacing*2;
     font-size: $outerCore;
   }
 
@@ -88,7 +108,7 @@
 
   dl {
     font-size: $outerCore;
-    margin-bottom: $spacing;
+    margin-bottom: $spacing*2;
   }
 
   dd, dt {
@@ -97,6 +117,12 @@
 
   dt {
     ff-title()
+    padding: $spacing*.5
+    background-color: rgba($primary, 20%);
+  }
+
+  dd {
+    padding: $spacing*2;
   }
 
   table {
@@ -104,15 +130,45 @@
     margin-bottom: $spacing*2;
     width: 100%;
 
+    caption {
+      font-style: italic;
+      margin: $spacing 0;
+      caption-side: bottom;
+      font-size: $bodyCopy;
+    }
+
+    thead {
+      background-color $primary;
+      color: $light;
+    }
+
     th {
       ff-title()
+      text-align center
+      background-color: rgba($dark, 5%)
     }
 
     th, td {
       padding: $spacing;
-      border-bottom: 1px solid $border;
+      //border-bottom: 1px solid $border;
     }
 
+    tr:nth-child(even) {
+      th {
+        background-color: rgba($primary, 20%)
+      }
+      td {
+        background-color: rgba($primary, 10%)
+      }
+      
+    }
+
+  }
+
+  .highlight {
+    color: darken(#e9fc4d, 60%);
+    background-color: rgba(#e9fc4d, 60%);
+    padding: 0 3px;
   }
 
   // PARENT OVERRIDES

@@ -1,10 +1,13 @@
 <!-- c-breadcrumbs starts here -->
-<?php // obviously this is currently hard coded and will need to be made dynamic?>
 <section class="c-breadcrumbs">
  <ul>
-   <li><a href="/">Home</a></li>
-   <li><a href="/blog">Blog</a></li>
-   <li>Current article</li>
+   {% for crumb in breadcrumbs %}
+    {% if crumb.url %}
+      <li><a href="{{ crumb.url }}">{{ crumb.name }}</a><span class="u-icon u-icon--angle-right"></span></li>
+    {% else %}
+      <li>{{ crumb.name }}</li>
+    {% endif %}
+   {% endfor %}
  </ul>
 </section>
 <!-- c-breadcrumbs ends here -->

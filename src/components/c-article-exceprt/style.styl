@@ -1,25 +1,28 @@
 // include the toolkit (a suite of variables, classes and mixins)
 @require "../../globals/css/_toolkit"
 
-.c-article-exceprt {
+.c-article-excerpt {
 
   p {
-    color: $text;
+    ff-body()
+    white-space: pre-wrap;
+    word-wrap: break-word;
     font-size: $outerCore;
-    line-height: $lineHeight*1.4;
   }
 
 // Parent overrides
 
   .c-article-item & {
-    span(1/2, $offset: 1/2)
     p {
       font-size: $smallCopy;
-      margin-bottom: 0;
     }
   }
-
   .c-news-article & {
-    margin-bottom: $spacing
+    p {
+      font-weight bold
+    }
   }
+   .c-news-list & {
+     display: none;
+   }
 }

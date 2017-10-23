@@ -8,21 +8,21 @@
   margin-bottom: $spacing*2;
   // Main page title
   &--page {
-  	font-size: $crust;
-  	margin-top: $spacing*2.5;
+    font-size: $crust;
+    margin-top: $spacing*2.5;
   }
   // Section title
   &--section {
-  	font-size: $outerCore;
+    font-size: $outerCore;
     margin-bottom $spacing
-	}
+  }
   // Subtitle. Same as section title but without border
   &--subtitle {
     font-size: $mantle;
   }
 
   &--headline {
-    font-size: $crust
+    font-size: $crust*1.2
   }
 }
 
@@ -64,6 +64,12 @@
   clear:both;
   padding: $spacing 0;
   margin-bottom: $spacing;
+}
+
+// A divider (usually a pipe ('|'') between two or more inline elements)
+.o-spacer {
+  display inline-block
+  margin: 0 $spacing*.5
 }
 
 // A button that is disguised as a regular text link
