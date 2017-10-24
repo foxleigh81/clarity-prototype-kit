@@ -16,7 +16,7 @@ $(document).ready(function () {
   $('html').removeClass('no-js').addClass('js')
   // When the page loads, check to see which agency is active and then load any appropriate data
   $('html').moji_dataLoader()// .moji_rewriter()
-  $('.js-header-container').moji_changeAgency()
+  $('.js-intranet-switcher').moji_changeAgency()
   $('.js-main-nav-bar').moji_toggleMenu()
   // Load scripts
   $('.js-clarity-toolbar').moji_clarityToolbar()

@@ -1,10 +1,6 @@
 {
   "name": "moji-clarity-prototype-kit",
   "version": "0.0.1",
-  "engines": {
-    "node": "4.4.5",
-    "npm": "2.15.5"
-  },
   "description": "The prototype toolkit for clarity",
   "main": "server.js",
   "scripts": {

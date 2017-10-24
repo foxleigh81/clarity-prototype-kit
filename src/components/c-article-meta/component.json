@@ -1,0 +1,26 @@
+{
+  "name" : "Article Meta Data",
+  "class" : "c-article-meta",
+  "version" : "1.0.0",
+  "creator" : {
+    "name" : "Alex Foxleigh",
+    "github_username" : "foxleigh81"
+  },
+  "description" : "The meta data component for articles",
+  "standard_or_universal" : "standard",
+  "parents" : "",
+  "children" : "c-article-byline, c-article-dateline, c-article-category, c-article-featured-image",
+  "notes" : {
+    "backend" : "",
+    "frontend" : "Also contains the article title"
+  },
+  "backend_classes" : {},
+  "creation_ticket" : "",
+  "changelog" : [
+    {
+      "date" : "17/10/2017",
+      "author" : "Alex Foxleigh",
+      "description" : "Created component"
+    }
+  ]
+}

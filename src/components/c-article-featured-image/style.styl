@@ -1,0 +1,12 @@
+// include the toolkit (a suite of variables, classes and mixins)
+@require "../../globals/css/_toolkit"
+
+.c-article-featured-image {
+  // PARENT OVERRIDES
+  .c-news-article & {
+    float: right;
+    margin-left: $spacing*3;
+    width: 35%;
+  }
+}
+
