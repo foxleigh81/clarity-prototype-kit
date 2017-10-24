@@ -17,12 +17,13 @@ ff-body() {
   margin-bottom: $bodyCopy;
 }
 
-// For a real content list with bullet points
-real-list() {
+// For a real content list with bullet points use on a 'ul' element.
+real-list(type = 'ol') {
   ff-body();
   margin-left: $spacing*4;
   li {
-    list-style: disc;
+    if(type == 'ul') { list-style: disc; }
+    if(type == 'ol') { list-style: decimal; }
   }
 }
 
@@ -87,11 +88,15 @@ agency-color(mode, opacity, color) {
   if(mode == 'fadefg') { color: rgba(color, opacity) }
   if(mode == 'bdr') { border-color: color }
   if(mode == 'fadebdr') { border-color: rgba(color, opacity) }
+  if(!mode) { color }
+  if(mode == 'fade') { rbga(color, fade) }
 }
 
 // Agency theme mixin
 // Usage, add this to a CSS rule and it will change to match the correct color for the currently selected agency
 // modes: 
+//  no mode (default) returns just a pure colour to match 
+//  fade: returns just a faded pure colour to match
 //  bg: Change background colour to match, 
 //  fg: change foreground colour to match, 
 //  bdr: change border colour to match, 
