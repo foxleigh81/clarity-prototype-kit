@@ -85,17 +85,21 @@ agency-color(mode, opacity, color) {
   if(mode == 'fadebg') { background-color: rgba(color, opacity) }
   if(mode == 'fg') { color: color }
   if(mode == 'fadefg') { color: rgba(color, opacity) }
+  if(mode == 'bdr') { border-color: color }
+  if(mode == 'fadebdr') { border-color: rgba(color, opacity) }
 }
 
-// Agency mixin
+// Agency theme mixin
 // Usage, add this to a CSS rule and it will change to match the correct color for the currently selected agency
 // modes: 
 //  bg: Change background colour to match, 
 //  fg: change foreground colour to match, 
+//  bdr: change border colour to match, 
 //  fadebg: apply a faded background colour to match
 //  fadefg: apply a faded foreground colour to match
+//  fadebdr: apply a faded border colour to match
 
-agency(mode = "bg", opacity = "100%") {
+agency-theme(mode = "bg", opacity = "100%") {
   .agency-hq &,
   .agency-hmpps &,
   .agency-jac &,

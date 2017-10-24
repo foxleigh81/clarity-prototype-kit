@@ -19,7 +19,7 @@
       padding-left: $spacing
       border-left: 10px solid;
     }
-    display block
+    display block;
     width: 82%;
     +above(m) {
       width: 55%;
@@ -28,31 +28,12 @@
     
     
     ff-title()
-    color: $dark
+    color: $dark;
     font-size $crust;
     margin-right: $spacing*2
     padding-left: $spacing*2;
     border-left: 20px solid;
-    .agency-hq &,
-    .agency-hmpps &,
-    .agency-jac &,
-    .agency-ospt &,
-    .agency-lc &,
-    .agency-cica & {
-      border-color: $primary;
-    }
-    .agency-hmcts & {
-      border-color: $hmcts_primary;
-    }
-    .agency-laa & {
-      border-color: $laa_primary;
-    }
-    .agency-opg & {
-      border-color: $opg_primary;
-    }
-    .agency-pb & {
-      border-color: $pb_primary;
-    }
+    agency-theme('fg');
     
   }
 
