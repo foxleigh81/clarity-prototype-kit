@@ -79,6 +79,45 @@ button(bgc) {
   }
 }
 
+// Agency colour mixin, to be used only in conjunction with the agency mixin below.
+agency-color(mode, opacity, color) {
+  if(mode == 'bg') { background-color: color }
+  if(mode == 'fadebg') { background-color: rgba(color, opacity) }
+  if(mode == 'fg') { color: color }
+  if(mode == 'fadefg') { color: rgba(color, opacity) }
+}
+
+// Agency mixin
+// Usage, add this to a CSS rule and it will change to match the correct color for the currently selected agency
+// modes: 
+//  bg: Change background colour to match, 
+//  fg: change foreground colour to match, 
+//  fadebg: apply a faded background colour to match
+//  fadefg: apply a faded foreground colour to match
+
+agency(mode = "bg", opacity = "100%") {
+  .agency-hq &,
+  .agency-hmpps &,
+  .agency-jac &,
+  .agency-ospt &,
+  .agency-lc &,
+  .agency-cica & {
+    agency-color(mode, opacity, $primary)
+  }
+  .agency-hmcts & {
+    agency-color(mode, opacity, $hmcts_primary)
+  }
+  .agency-laa & {
+    agency-color(mode, opacity, $laa_primary)
+  }
+  .agency-pb & {
+    agency-color(mode, opacity, $pb_primary)
+  }
+  .agency-opg & {
+    agency-color(mode, opacity, $opg_primary)
+  }
+}
+
 // Contrast. Use this to make sure your colours are always contrasting aganst your bg colour!
 contrast(color) {
   background-color: color;

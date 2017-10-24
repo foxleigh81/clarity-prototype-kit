@@ -82,26 +82,7 @@
         transition .3s max-height ease-in-out
         
         span {
-           .agency-hq &,
-          .agency-hmpps &,
-          .agency-jac &,
-          .agency-ospt &,
-          .agency-lc &,
-          .agency-cica & {
-            background-color rgba($primary, 30%)
-          }
-          .agency-hmcts & {
-            background-color rgba($hmcts_primary, 30%)
-          }
-          .agency-laa & {
-            background-color rgba($laa_primary, 30%)
-          }
-          .agency-pb & {
-            background-color rgba($pb_primary, 30%)
-          }
-          .agency-opg & {
-            background-color rgba($opg_primary, 30%)
-          }
+          agency('bg')
           display block
           padding: $spacing;
           font-weight bold
@@ -116,33 +97,14 @@
               display none
             }
             &:hover {
-                .agency-hq &,
-                .agency-hmpps &,
-                .agency-jac &,
-                .agency-ospt &,
-                .agency-lc &,
-                .agency-cica & {
-                  background-color rgba($primary, 20%)
-                }
-                .agency-hmcts & {
-                  background-color rgba($hmcts_primary, 20%)
-                }
-                .agency-laa & {
-                  background-color rgba($laa_primary, 20%)
-                }
-                .agency-pb & {
-                  background-color rgba($pb_primary, 20%)
-                }
-                .agency-opg & {
-                  background-color rgba($opg_primary, 20%)
-                }
+              agency('bg')
             }
           }
         }
       }
     }
 
-    &:hover {
+    &.open {
       nav {
         max-height 1800px;
         height: auto;
@@ -160,26 +122,7 @@
     }
     &:last-of-type {
       a {
-         .agency-hq &,
-        .agency-hmpps &,
-        .agency-jac &,
-        .agency-ospt &,
-        .agency-lc &,
-        .agency-cica & {
-          background-color rgba($primary, 8%)
-        }
-        .agency-hmcts & {
-          background-color saturation(lighten($hmcts_primary, 85%), 40%)
-        }
-        .agency-laa & {
-          background-color rgba($laa_primary, 8%)
-        }
-        .agency-pb & {
-          background-color rgba($pb_primary, 8%)
-        }
-        .agency-opg & {
-          background-color rgba($opg_primary, 8%)
-        }
+         agency('fadebg', 8%)
       }
     }
   }
