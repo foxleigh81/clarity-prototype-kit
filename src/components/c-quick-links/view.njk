@@ -1,10 +1,5 @@
 <section class="c-quick-links">
-{# FIXME: This is a hack for the prototype, it shouldn't make it into the production site #}
-{% if agency.shortcode === "HMCTS" %}
   <h1 class="o-title o-title--section">{{agency.knownAs}} tools and services</h1>
-{% else %}
-  <h1 class="o-title o-title--section">{{agency.knownAs}} work and services</h1>
-{% endif %}
   <ul>
     {% for link in quickLinks %}
       {% if(link.agencies == "all") or (link.agencies == agency.shortcode) %}
