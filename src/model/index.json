@@ -366,24 +366,24 @@
     }
   ],
   "poll" : {
-    "name" : "favourite-colour",
-    "questionTitle" : "What is your favourite colour?",
-    "questionDesc" : "Everyone has a favourite colour, what is yours?",
+    "name" : "work-away",
+    "questionTitle" : "Working from home?",
+    "questionDesc" : "What percentage of the working week are you expected to work away from your core office?",
     "multiSelect" : false,
     "answers" : [
       {
-        "title" : "Red",
-        "value" : "red",
+        "title" : "Up to 20%",
+        "value" : "20",
         "count" : 11
       },
       {
-        "title" : "Green",
-        "value" : "green",
+        "title" : "Up to 30%",
+        "value" : "30",
         "count" : 22
       },
       {
-        "title" : "Blue",
-        "value" : "blue",
+        "title" : "Up to 40%",
+        "value" : "40",
         "count" : 85
       }
     ],
