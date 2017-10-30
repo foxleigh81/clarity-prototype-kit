@@ -163,6 +163,28 @@
       
     }
 
+  // Responsive tables are a nightmare so use of +below is justified here
+  +below(m) {
+    table, thead, tbody, th, tr, td {
+      display: block;
+    }
+
+    td { 
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee; 
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+      }
+    }
+  }
+
   }
 
   .highlight {
